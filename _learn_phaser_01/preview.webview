@@ -1,0 +1,3 @@
+source_url = "http://localhost:8080/"
+show_url_bar = true
+show_bookmarks_bar = true
