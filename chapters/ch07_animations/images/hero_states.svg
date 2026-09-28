@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="420" viewBox="0 0 780 420" font-family="Arial" fill="#1b1f2a">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#1d3557"/>
+    </marker>
+  </defs>
+  <rect width="780" height="420" fill="#ffffff"/>
+  <text x="390" y="26" font-size="18" font-weight="bold" text-anchor="middle">The hero's states - always exactly one; each plays its own animation</text>
+
+  <!-- "any state" box -->
+  <rect x="95" y="46" width="490" height="340" rx="10" fill="none" stroke="#457b9d" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="110" y="376" font-size="13" fill="#457b9d">any of these states</text>
+
+  <!-- states -->
+  <g font-size="20" font-weight="bold" text-anchor="middle">
+    <rect x="115" y="68" width="150" height="64" rx="12" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+    <text x="190" y="98">idle</text>
+    <rect x="115" y="288" width="150" height="64" rx="12" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+    <text x="190" y="318">run</text>
+    <rect x="405" y="68" width="150" height="64" rx="12" fill="#2a9d8f" stroke="#1d3557" stroke-width="2"/>
+    <text x="480" y="98">jump</text>
+    <rect x="405" y="288" width="150" height="64" rx="12" fill="#457b9d" stroke="#1d3557" stroke-width="2"/>
+    <text x="480" y="318" fill="#f1faee">fall</text>
+    <rect x="625" y="178" width="140" height="64" rx="12" fill="#e63946" stroke="#1d3557" stroke-width="2"/>
+    <text x="695" y="208" fill="#f1faee">hurt</text>
+  </g>
+  <g font-size="13" text-anchor="middle" font-family="Courier New, monospace">
+    <text x="190" y="120">hero-idle</text>
+    <text x="190" y="340">hero-run</text>
+    <text x="480" y="120" fill="#f1faee">hero-jump</text>
+    <text x="480" y="340" fill="#f1faee">hero-fall</text>
+    <text x="695" y="230" fill="#f1faee">hero-hurt</text>
+  </g>
+
+  <!-- transitions -->
+  <g stroke="#1d3557" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <line x1="165" y1="134" x2="165" y2="284"/>   <!-- idle -> run -->
+    <line x1="215" y1="286" x2="215" y2="136"/>   <!-- run -> idle -->
+    <line x1="267" y1="100" x2="401" y2="100"/>   <!-- idle -> jump -->
+    <line x1="255" y1="286" x2="420" y2="136"/>   <!-- run -> jump -->
+    <line x1="480" y1="134" x2="480" y2="284"/>   <!-- jump -> fall -->
+    <line x1="403" y1="330" x2="269" y2="330"/>   <!-- fall -> run -->
+    <line x1="420" y1="286" x2="255" y2="136"/>   <!-- fall -> idle -->
+    <line x1="587" y1="195" x2="621" y2="195"/>   <!-- any -> hurt -->
+    <line x1="623" y1="226" x2="589" y2="226"/>   <!-- hurt -> back -->
+  </g>
+  <g font-size="13">
+    <text x="158" y="205" text-anchor="end">LEFT or</text>
+    <text x="158" y="221" text-anchor="end">RIGHT held</text>
+    <text x="222" y="205">keys</text>
+    <text x="222" y="221">let go</text>
+    <text x="334" y="92" text-anchor="middle">UP pressed</text>
+    <text x="282" y="282">UP pressed</text>
+    <text x="488" y="205">velocityY &gt;= 0</text>
+    <text x="488" y="221">(going down)</text>
+    <text x="336" y="350" text-anchor="middle">lands, key held</text>
+    <text x="400" y="302" text-anchor="end">lands, no key</text>
+  </g>
+  <g font-size="13" text-anchor="middle">
+    <text x="604" y="186">H</text>
+    <text x="695" y="262">leaves when the hurt</text>
+    <text x="695" y="278">animation COMPLETES:</text>
+    <text x="695" y="294">to idle, or to fall</text>
+    <text x="695" y="310">if still in the air</text>
+  </g>
+  <text x="390" y="410" font-size="14" text-anchor="middle">Changing state is the ONLY time an animation starts - so an animation never restarts every frame</text>
+</svg>

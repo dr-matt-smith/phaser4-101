@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Space Ship</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>&larr; &rarr;</kbd>
+          <span>Turn</span>
+          <kbd>&uarr;</kbd>
+          <span>Thrust</span>
+          <!-- CHALLENGE 3 -->
+          <kbd>&darr;</kbd>
+          <span>Reverse thrust (half power)</span>
+          <kbd>Shift</kbd>
+          <span>Brakes</span>
+          <kbd>Space</kbd>
+          <span>Fire (hold for more)</span>
+          <kbd>R</kbd>
+          <span>Start again</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+// assets.ts - the key and file of every sound the game uses
+//
+// The ball's picture is in Ball.ts, beside the class that uses it. The sounds are used by more than
+// one scene, so they live here.
+
+export const POP_KEY = "pop";
+export const POP_FILE = "assets/audio/pop.wav";
+export const CLICK_KEY = "click";
+export const CLICK_FILE = "assets/audio/click.wav";
+export const WIN_KEY = "win";
+export const WIN_FILE = "assets/audio/win.wav";
+
+// the name the best time is kept under in the game's REGISTRY (see WinScene)
+export const BEST_TIME = "bestTime";

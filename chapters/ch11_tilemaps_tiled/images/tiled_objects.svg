@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="280" viewBox="0 0 800 280" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker>
+
+</defs>
+<rect width="800" height="280" fill="#ffffff"/>
+<text x="20" y="26" font-size="14" fill="#1b1f2a" font-weight="bold">Where Tiled measures each kind of object from</text>
+<rect x="20" y="50" width="192" height="160" fill="#f1faee"/>
+<line x1="20" y1="50" x2="20" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="52" y1="50" x2="52" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="84" y1="50" x2="84" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="116" y1="50" x2="116" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="148" y1="50" x2="148" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="180" y1="50" x2="180" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="212" y1="50" x2="212" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="20" y1="50" x2="212" y2="50" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="20" y1="82" x2="212" y2="82" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="20" y1="114" x2="212" y2="114" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="20" y1="146" x2="212" y2="146" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="20" y1="178" x2="212" y2="178" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="20" y1="210" x2="212" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<circle cx="116" cy="146" r="6" fill="#2a9d8f" stroke="#1d3557" stroke-width="1.5"/>
+<text x="126" y="140" font-size="12" fill="#1d3557" font-weight="bold">(x, y)</text>
+<text x="20" y="232" font-size="12.5" fill="#1b1f2a" font-weight="bold">Point: x and y are the point.</text>
+<text x="20" y="250" font-size="12" fill="#1b1f2a">A sprite placed there is centred on it.</text>
+<rect x="270" y="50" width="224" height="160" fill="#f1faee"/>
+<line x1="270" y1="50" x2="270" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="302" y1="50" x2="302" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="334" y1="50" x2="334" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="366" y1="50" x2="366" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="398" y1="50" x2="398" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="430" y1="50" x2="430" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="462" y1="50" x2="462" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="494" y1="50" x2="494" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="270" y1="50" x2="494" y2="50" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="270" y1="82" x2="494" y2="82" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="270" y1="114" x2="494" y2="114" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="270" y1="146" x2="494" y2="146" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="270" y1="178" x2="494" y2="178" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="270" y1="210" x2="494" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<rect x="334" y="82" width="128" height="96" fill="rgba(230,57,70,0.15)" stroke="#e63946" stroke-width="2"/>
+<circle cx="334" cy="82" r="5" fill="#e63946"/>
+<text x="340" y="76" font-size="12" fill="#e63946" font-weight="bold">(x, y)</text>
+<circle cx="398" cy="130" r="4" fill="#1d3557"/>
+<text x="398" y="150" font-size="11" fill="#1d3557" text-anchor="middle">centre</text>
+<line x1="334" y1="194" x2="462" y2="194" stroke="#e63946" stroke-width="1.5"/>
+<text x="398" y="208" font-size="11" fill="#e63946" text-anchor="middle">width</text>
+<line x1="478" y1="82" x2="478" y2="178" stroke="#e63946" stroke-width="1.5"/>
+<text x="484" y="134" font-size="11" fill="#e63946">height</text>
+<text x="270" y="232" font-size="12.5" fill="#1b1f2a" font-weight="bold">Rectangle: x, y is the TOP-LEFT corner.</text>
+<text x="270" y="250" font-size="12" fill="#1b1f2a">A Zone is placed by its centre:</text>
+<text x="270" y="266" font-size="12" fill="#1d3557" font-family="Menlo, Consolas, monospace" xml:space="preserve">(x + width / 2, y + height / 2)</text>
+<rect x="540" y="50" width="224" height="160" fill="#f1faee"/>
+<line x1="540" y1="50" x2="540" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="572" y1="50" x2="572" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="604" y1="50" x2="604" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="636" y1="50" x2="636" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="668" y1="50" x2="668" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="700" y1="50" x2="700" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="732" y1="50" x2="732" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="764" y1="50" x2="764" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="540" y1="50" x2="764" y2="50" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="540" y1="82" x2="764" y2="82" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="540" y1="114" x2="764" y2="114" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="540" y1="146" x2="764" y2="146" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="540" y1="178" x2="764" y2="178" stroke="#cdd6e0" stroke-width="1"/>
+<line x1="540" y1="210" x2="764" y2="210" stroke="#cdd6e0" stroke-width="1"/>
+<polyline points="572,146 668,146 700,82" fill="none" stroke="#457b9d" stroke-width="3"/>
+<circle cx="572" cy="146" r="4.5" fill="#457b9d"/>
+<circle cx="668" cy="146" r="4.5" fill="#457b9d"/>
+<circle cx="700" cy="82" r="4.5" fill="#457b9d"/>
+<text x="566" y="166" font-size="11" fill="#1d3557" font-weight="bold">(x, y) = point 0,0</text>
+<text x="640" y="138" font-size="11" fill="#457b9d">96,0</text>
+<text x="708" y="80" font-size="11" fill="#457b9d">128,-64</text>
+<text x="540" y="232" font-size="12.5" fill="#1b1f2a" font-weight="bold">Polyline: a list of points,</text>
+<text x="540" y="250" font-size="12" fill="#1b1f2a">each measured FROM (x, y).</text>
+</svg>

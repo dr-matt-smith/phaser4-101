@@ -1,0 +1,24 @@
+# A shell console running the platform default shell. An executable set in the settings view is typed
+# into the shell as a command once it starts, quoted for whichever shell the platform provides.
+[session]
+type = "shell"
+
+[[session.shortcut]]
+label = "build the game into folder 'dist'"
+icon = "bs-1-circle"
+text = "deno task build"
+
+[[session.shortcut]]
+label = "serve the game at http://127.0.0.1:8000/"
+icon = "bs-2-circle"
+text = "deno task serve"
+
+[[session.shortcut]]
+label = "rebuild automatically on every save"
+icon = "bs-arrow-repeat"
+text = "deno task dev"
+
+[[session.shortcut]]
+label = "type-check the TypeScript"
+icon = "bs-check-circle"
+text = "deno task check"

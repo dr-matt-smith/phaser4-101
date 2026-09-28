@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="390" viewBox="0 0 780 390" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="390" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">GameScene's phase, through one level (advanced version)</text>
+
+  <rect x="30" y="120" width="150" height="70" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2.5"/>
+  <text x="105" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">"between"</text>
+  <text x="105" y="170" text-anchor="middle" font-size="12" fill="#1b1f2a">a banner, a pause</text>
+
+  <rect x="310" y="120" width="150" height="70" rx="12" fill="#a8dadc" stroke="#1d3557" stroke-width="2.5"/>
+  <text x="385" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">"waves"</text>
+  <text x="385" y="170" text-anchor="middle" font-size="12" fill="#1b1f2a">enemiesLeft counts down</text>
+
+  <rect x="590" y="120" width="150" height="70" rx="12" fill="#fff3e6" stroke="#f4a261" stroke-width="2.5"/>
+  <text x="665" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">"boss"</text>
+  <text x="665" y="170" text-anchor="middle" font-size="12" fill="#1b1f2a">health bar in the HUD</text>
+
+  <rect x="310" y="300" width="150" height="60" rx="12" fill="#ffe3e5" stroke="#e63946" stroke-width="2.5"/>
+  <text x="385" y="327" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">"over"</text>
+  <text x="385" y="346" text-anchor="middle" font-size="12" fill="#1b1f2a">to GameOverScene</text>
+  <text x="385" y="380" text-anchor="middle" font-size="12" fill="#1b1f2a">from any phase: no lives left - or after the last boss</text>
+
+  <path d="M180 145 L306 145" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="243" y="136" text-anchor="middle" font-size="12" fill="#e63946">nextWave()</text>
+
+  <path d="M330 190 C 300 225, 220 225, 170 194" stroke="#1d3557" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="250" y="237" text-anchor="middle" font-size="12" fill="#e63946">enemiesLeft reaches 0</text>
+
+  <path d="M140 120 C 180 50, 560 50, 620 116" stroke="#1d3557" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="385" y="62" text-anchor="middle" font-size="12" fill="#e63946">nextWave() when there are no waves left: startBoss()</text>
+
+  <path d="M650 190 C 610 300, 150 300, 80 194" stroke="#1d3557" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="640" y="262" text-anchor="middle" font-size="12" fill="#e63946">boss destroyed: next level</text>
+</svg>

@@ -1,0 +1,79 @@
+/* The page around the game. The game itself is drawn by Phaser inside <div id="game">. */
+
+:root {
+  --bg: #1b1f2a;
+  --panel: #262c3b;
+  --text: #e8ecf5;
+  --muted: #9aa4bd;
+  --key: #3a4258;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 4:3, as wide as the page allows, never wider than 800px - Phaser's FIT scale mode fills it */
+#game {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: #000;
+}
+
+#game canvas {
+  display: block;
+}
+
+.controls {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 1rem;
+  background: var(--panel);
+  border-radius: 6px;
+  text-align: center;
+}
+
+.controls h3 {
+  margin: 0.5rem 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem 1rem;
+}
+
+kbd {
+  justify-self: end;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--key);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
+}

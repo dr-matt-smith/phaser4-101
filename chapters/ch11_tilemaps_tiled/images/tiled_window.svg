@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="606" viewBox="0 0 800 606" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker>
+<image id="platform" width="256" height="64" xlink:href="data:image/png;base64,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"/>
+</defs>
+<rect width="800" height="606" fill="#ffffff"/>
+<rect x="10" y="10" width="780" height="500" rx="8" fill="#ffffff" stroke="#1d3557" stroke-width="2"/>
+<path d="M10,38 V18 a8,8 0 0 1 8,-8 H782 a8,8 0 0 1 8,8 V38 z" fill="#1d3557"/>
+<text x="400" y="29" font-size="13" fill="#f1faee" text-anchor="middle">level1.tmx - Tiled</text>
+<rect x="11" y="38" width="778" height="22" fill="#f7f9fc"/>
+<text x="22" y="54" font-size="12" fill="#1b1f2a">File</text>
+<text x="74" y="54" font-size="12" fill="#1b1f2a">Edit</text>
+<text x="126" y="54" font-size="12" fill="#1b1f2a">View</text>
+<text x="178" y="54" font-size="12" fill="#1b1f2a">World</text>
+<text x="230" y="54" font-size="12" fill="#1b1f2a">Map</text>
+<text x="282" y="54" font-size="12" fill="#1b1f2a">Layer</text>
+<text x="334" y="54" font-size="12" fill="#1b1f2a">Help</text>
+<rect x="11" y="60" width="778" height="30" fill="#eef2f7"/>
+<rect x="20" y="65" width="94" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="67" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Stamp Brush (B)</text>
+<rect x="120" y="65" width="94" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="167" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Bucket Fill (F)</text>
+<rect x="220" y="65" width="66" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="253" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Eraser (E)</text>
+<rect x="292" y="65" width="110.8" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="347.4" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Select Objects (S)</text>
+<rect x="408.8" y="65" width="122" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="469.8" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Insert Rectangle (R)</text>
+<rect x="536.8" y="65" width="99.6" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="586.5999999999999" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Insert Point (I)</text>
+<rect x="642.4" y="65" width="110.8" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="697.8" y="79" font-size="10.5" fill="#1b1f2a" text-anchor="middle">Insert Polygon (P)</text>
+<rect x="18" y="98" width="170" height="404" rx="3" fill="#f7f9fc" stroke="#d9dee8" stroke-width="1"/>
+<rect x="18" y="98" width="170" height="20" fill="#a8dadc"/>
+<text x="26" y="112" font-size="12" fill="#1b1f2a" font-weight="bold">Properties</text>
+<rect x="19" y="122" width="168" height="19" fill="#e3e8f0"/>
+<text x="26" y="136" font-size="11.5" fill="#1b1f2a" font-weight="bold">Map</text>
+<text x="26" y="158" font-size="11.5" fill="#1b1f2a">Orientation</text>
+<text x="110" y="158" font-size="11.5" fill="#457b9d">Orthogonal</text>
+<text x="26" y="180" font-size="11.5" fill="#1b1f2a">Width</text>
+<text x="110" y="180" font-size="11.5" fill="#457b9d">64</text>
+<text x="26" y="202" font-size="11.5" fill="#1b1f2a">Height</text>
+<text x="110" y="202" font-size="11.5" fill="#457b9d">20</text>
+<text x="26" y="224" font-size="11.5" fill="#1b1f2a">Tile Width</text>
+<text x="110" y="224" font-size="11.5" fill="#457b9d">32</text>
+<text x="26" y="246" font-size="11.5" fill="#1b1f2a">Tile Height</text>
+<text x="110" y="246" font-size="11.5" fill="#457b9d">32</text>
+<rect x="19" y="254" width="168" height="19" fill="#e3e8f0"/>
+<text x="26" y="268" font-size="11.5" fill="#1b1f2a" font-weight="bold">Custom Properties</text>
+<text x="26" y="290" font-size="11.5" fill="#1b1f2a">name</text>
+<text x="110" y="290" font-size="11.5" fill="#457b9d">Green Hills</text>
+<rect x="26" y="470" width="22" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="37" y="485" font-size="15" fill="#457b9d" font-weight="bold" text-anchor="middle">+</text>
+<text x="54" y="484" font-size="11" fill="#457b9d">Add Property</text>
+<rect x="196" y="98" width="382" height="404" rx="3" fill="#8ecae6" stroke="#d9dee8" stroke-width="1"/>
+<svg x="252" y="394" width="24" height="24" viewBox="192 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="300" y="394" width="24" height="24" viewBox="224 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="420" y="394" width="24" height="24" viewBox="192 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="420" y="274" width="24" height="24" viewBox="64 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="444" y="274" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="468" y="274" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="492" y="274" width="24" height="24" viewBox="96 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="324" y="346" width="24" height="24" viewBox="64 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="348" y="346" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="372" y="346" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="396" y="346" width="24" height="24" viewBox="96 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="204" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="228" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="252" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="276" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="300" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="324" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="348" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="372" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="396" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="420" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="444" y="418" width="24" height="24" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="468" y="418" width="24" height="24" viewBox="96 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="204" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="228" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="252" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="276" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="300" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="324" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="348" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="372" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="396" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="420" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="444" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="468" y="442" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="492" y="442" width="24" height="24" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="516" y="442" width="24" height="24" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="540" y="442" width="24" height="24" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="204" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="228" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="252" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="276" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="300" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="324" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="348" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="372" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="396" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="420" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="444" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="468" y="466" width="24" height="24" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="492" y="466" width="24" height="24" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="516" y="466" width="24" height="24" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="540" y="466" width="24" height="24" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<line x1="204" y1="106" x2="204" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="228" y1="106" x2="228" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="252" y1="106" x2="252" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="276" y1="106" x2="276" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="300" y1="106" x2="300" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="324" y1="106" x2="324" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="348" y1="106" x2="348" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="372" y1="106" x2="372" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="396" y1="106" x2="396" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="420" y1="106" x2="420" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="444" y1="106" x2="444" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="468" y1="106" x2="468" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="492" y1="106" x2="492" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="516" y1="106" x2="516" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="540" y1="106" x2="540" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="564" y1="106" x2="564" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="106" x2="564" y2="106" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="130" x2="564" y2="130" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="154" x2="564" y2="154" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="178" x2="564" y2="178" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="202" x2="564" y2="202" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="226" x2="564" y2="226" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="250" x2="564" y2="250" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="274" x2="564" y2="274" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="298" x2="564" y2="298" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="322" x2="564" y2="322" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="346" x2="564" y2="346" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="370" x2="564" y2="370" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="394" x2="564" y2="394" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="418" x2="564" y2="418" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="442" x2="564" y2="442" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="466" x2="564" y2="466" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<line x1="204" y1="490" x2="564" y2="490" stroke="rgba(29,53,87,0.18)" stroke-width="1"/>
+<circle cx="252" cy="400" r="6" fill="#2a9d8f" stroke="#1d3557"/>
+<text x="252" y="390" font-size="11" fill="#1d3557" font-weight="bold" text-anchor="middle">player</text>
+<circle cx="360" cy="334" r="5" fill="#f4a261" stroke="#1d3557"/>
+<circle cx="384" cy="334" r="5" fill="#f4a261" stroke="#1d3557"/>
+<circle cx="456" cy="262" r="5" fill="#f4a261" stroke="#1d3557"/>
+<circle cx="480" cy="262" r="5" fill="#f4a261" stroke="#1d3557"/>
+<circle cx="528" cy="382" r="5" fill="#f4a261" stroke="#1d3557"/>
+<rect x="586" y="98" width="196" height="170" rx="3" fill="#f7f9fc" stroke="#d9dee8" stroke-width="1"/>
+<rect x="586" y="98" width="196" height="20" fill="#a8dadc"/>
+<text x="594" y="112" font-size="12" fill="#1b1f2a" font-weight="bold">Layers</text>
+<rect x="590" y="124" width="188" height="22" fill="#ffffff" stroke="#d9dee8"/>
+<text x="598" y="139" font-size="11" fill="#457b9d">◉</text>
+<text x="614" y="139" font-size="12" fill="#1b1f2a">Objects</text>
+<text x="772" y="139" font-size="10" fill="#457b9d" text-anchor="end">object layer</text>
+<rect x="590" y="150" width="188" height="22" fill="#cfe3ee" stroke="#d9dee8"/>
+<text x="598" y="165" font-size="11" fill="#457b9d">◉</text>
+<text x="614" y="165" font-size="12" fill="#1b1f2a" font-weight="bold">Ground</text>
+<text x="772" y="165" font-size="10" fill="#457b9d" text-anchor="end">tile layer</text>
+<rect x="590" y="176" width="188" height="22" fill="#ffffff" stroke="#d9dee8"/>
+<text x="598" y="191" font-size="11" fill="#457b9d">◉</text>
+<text x="614" y="191" font-size="12" fill="#1b1f2a">Background</text>
+<text x="772" y="191" font-size="10" fill="#457b9d" text-anchor="end">tile layer</text>
+<text x="594" y="222" font-size="10.5" fill="#457b9d">top of the list = drawn on top</text>
+<text x="594" y="238" font-size="10.5" fill="#457b9d">Layer &gt; New &gt; Tile Layer / Object Layer</text>
+<rect x="586" y="276" width="196" height="226" rx="3" fill="#f7f9fc" stroke="#d9dee8" stroke-width="1"/>
+<rect x="586" y="276" width="196" height="20" fill="#a8dadc"/>
+<text x="594" y="290" font-size="12" fill="#1b1f2a" font-weight="bold">Tilesets</text>
+<rect x="592" y="300" width="92" height="18" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="638" y="313" font-size="10.5" fill="#1b1f2a" text-anchor="middle">platform_tiles</text>
+<svg x="594" y="326" width="22" height="22" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="617" y="326" width="22" height="22" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="640" y="326" width="22" height="22" viewBox="64 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="663" y="326" width="22" height="22" viewBox="96 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="686" y="326" width="22" height="22" viewBox="128 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="709" y="326" width="22" height="22" viewBox="160 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="732" y="326" width="22" height="22" viewBox="192 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="755" y="326" width="22" height="22" viewBox="224 0 32 32"><use xlink:href="#platform"/></svg>
+<svg x="594" y="349" width="22" height="22" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="617" y="349" width="22" height="22" viewBox="32 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="640" y="349" width="22" height="22" viewBox="64 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="663" y="349" width="22" height="22" viewBox="96 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="686" y="349" width="22" height="22" viewBox="128 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="709" y="349" width="22" height="22" viewBox="160 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="732" y="349" width="22" height="22" viewBox="192 32 32 32"><use xlink:href="#platform"/></svg>
+<svg x="755" y="349" width="22" height="22" viewBox="224 32 32 32"><use xlink:href="#platform"/></svg>
+<rect x="594" y="326" width="22" height="22" rx="1" fill="none" stroke="#e63946" stroke-width="2.5"/>
+<text x="594" y="390" font-size="10.5" fill="#457b9d">click a tile to paint with it;</text>
+<text x="594" y="404" font-size="10.5" fill="#457b9d">drag to pick a block of tiles</text>
+<rect x="594" y="470" width="22" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="605" y="484" font-size="12" fill="#457b9d" text-anchor="middle">✎</text>
+<text x="622" y="484" font-size="11" fill="#457b9d">Edit Tileset</text>
+<circle cx="770" cy="75" r="10" fill="#e63946"/><text x="770" y="79.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<circle cx="176" cy="108" r="10" fill="#e63946"/><text x="176" y="112.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<circle cx="566" cy="110" r="10" fill="#e63946"/><text x="566" y="114.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+<circle cx="770" cy="108" r="10" fill="#e63946"/><text x="770" y="112.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">4</text>
+<circle cx="770" cy="286" r="10" fill="#e63946"/><text x="770" y="290.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">5</text>
+<text x="14" y="530" font-size="12" fill="#1b1f2a">1  Tools: paint tiles (Stamp, Bucket, Eraser) or make objects (Rectangle, Point, Polygon)</text>
+<text x="14" y="546" font-size="12" fill="#1b1f2a">2  Properties: whatever is selected - the map, a layer, a tile or an object - and its custom properties</text>
+<text x="14" y="562" font-size="12" fill="#1b1f2a">3  The map itself: 32 x 32 tiles; the grid and the objects are only drawn in the editor</text>
+<text x="14" y="578" font-size="12" fill="#1b1f2a">4  Layers: tile layers and object layers, top of the list drawn on top</text>
+<text x="14" y="594" font-size="12" fill="#1b1f2a">5  Tilesets: the tiles you paint with</text>
+</svg>

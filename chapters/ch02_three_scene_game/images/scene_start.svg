@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="220" viewBox="0 0 760 220" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="220" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="380" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">What  this.scene.start(PLAY_SCENE, data)  does</text>
+  <rect x="20" y="60" width="160" height="70" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="100" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">this scene</text>
+  <text x="100" y="110" text-anchor="middle" font-size="12" fill="#1b1f2a">shuts down: its game</text>
+  <text x="100" y="124" text-anchor="middle" font-size="12" fill="#1b1f2a">objects are destroyed</text>
+  <rect x="220" y="60" width="115" height="70" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="277" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">init(data)</text>
+  <text x="277" y="112" text-anchor="middle" font-size="12" fill="#1b1f2a">reset fields</text>
+  <rect x="365" y="60" width="115" height="70" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="422" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">preload()</text>
+  <text x="422" y="112" text-anchor="middle" font-size="12" fill="#1b1f2a">load, and wait</text>
+  <rect x="510" y="60" width="115" height="70" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="567" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">create()</text>
+  <text x="567" y="112" text-anchor="middle" font-size="12" fill="#1b1f2a">make game objects</text>
+  <rect x="655" y="60" width="95" height="70" rx="10" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+  <text x="702" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">update()</text>
+  <text x="702" y="112" text-anchor="middle" font-size="12" fill="#1b1f2a">every frame</text>
+  <path d="M180 95 L216 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M335 95 L361 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M480 95 L506 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M625 95 L651 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="380" y="170" text-anchor="middle" font-size="13" fill="#e63946">The scene OBJECT is not new: Phaser made it once, when the game began, and starts it again.</text>
+  <text x="380" y="192" text-anchor="middle" font-size="13" fill="#e63946">Its fields keep their old values - which is why init() puts them back.</text>
+</svg>

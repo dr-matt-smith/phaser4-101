@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="440" viewBox="0 0 800 440" font-family="Arial, Helvetica, sans-serif">
+  <rect width="800" height="440" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1b1f2a">One Tiled map, five layers - and what the game does with each</text>
+
+  <!-- stacked layers, drawn bottom first -->
+  <g stroke="#1d3557" stroke-width="2">
+    <polygon points="60,370 330,370 390,320 120,320" fill="#f1faee"/>
+    <polygon points="60,305 330,305 390,255 120,255" fill="#a8dadc"/>
+    <polygon points="60,240 330,240 390,190 120,190" fill="#f4a261" opacity="0.8"/>
+    <polygon points="60,175 330,175 390,125 120,125" fill="#e9c46a" opacity="0.8"/>
+    <polygon points="60,110 330,110 390,60 120,60" fill="#ffffff" stroke-dasharray="6 4"/>
+  </g>
+  <!-- little tiles on the layers -->
+  <g>
+    <rect x="130" y="340" width="18" height="18" fill="#2d6a4f"/>
+    <rect x="260" y="340" width="18" height="18" fill="#c68b59"/>
+    <rect x="100" y="280" width="200" height="14" fill="#8d5a2b"/>
+    <rect x="100" y="276" width="200" height="5" fill="#52b788"/>
+    <rect x="300" y="262" width="60" height="14" fill="#8d5a2b"/>
+    <polygon points="160,228 168,210 176,228" fill="#ced4da" stroke="#495057"/>
+    <polygon points="176,228 184,210 192,228" fill="#ced4da" stroke="#495057"/>
+    <rect x="240" y="212" width="50" height="14" fill="#e85d04"/>
+    <rect x="300" y="132" width="10" height="36" fill="#8d5a2b"/>
+    <circle cx="150" cy="92" r="6" fill="#457b9d"/>
+    <circle cx="200" cy="85" r="6" fill="#ffcc33"/>
+    <circle cx="220" cy="85" r="6" fill="#ffcc33"/>
+    <circle cx="270" cy="92" r="6" fill="#2a9d8f"/>
+    <circle cx="340" cy="75" r="6" fill="#e63946"/>
+  </g>
+
+  <g font-size="16" font-weight="bold" fill="#1b1f2a">
+    <text x="410" y="90">Objects</text>
+    <text x="410" y="155">Ladders</text>
+    <text x="410" y="220">Hazards</text>
+    <text x="410" y="285">Ground</text>
+    <text x="410" y="350">Background</text>
+  </g>
+  <g font-size="14" fill="#1b1f2a">
+    <text x="410" y="108">player, coins, slimes, bats, checkpoints, flag, platforms</text>
+    <text x="410" y="124" font-family="Courier New, monospace" fill="#1d3557">getObjectLayer("Objects").objects</text>
+    <text x="410" y="173">tiles with ladder = true (advanced)</text>
+    <text x="410" y="189" font-family="Courier New, monospace" fill="#1d3557">getTileAtWorldXY(x, y)</text>
+    <text x="410" y="238">tiles with hazard = true: overlap only</text>
+    <text x="410" y="254" font-family="Courier New, monospace" fill="#1d3557">physics.add.overlap(hero, hazards, ...)</text>
+    <text x="410" y="303">tiles with collides = true</text>
+    <text x="410" y="319" font-family="Courier New, monospace" fill="#1d3557">setCollisionByProperty({ collides: true })</text>
+    <text x="410" y="368">bushes and signs - drawn, never touched</text>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-size="14" fill="#1b1f2a">The properties belong to the TILES, in the tileset embedded in the map - so every spike in every level is a hazard.</text>
+</svg>

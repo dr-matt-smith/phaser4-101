@@ -1,0 +1,42 @@
+{
+  "meadow": {
+    "path": "assets/",
+    "files": [
+      { "type": "image", "key": "sky", "url": "images/sky.png" },
+      { "type": "image", "key": "cloud", "url": "images/cloud.png" },
+      { "type": "image", "key": "platform", "url": "images/platform.png" },
+      { "type": "image", "key": "coin", "url": "images/coin.png" },
+      { "type": "image", "key": "player", "url": "images/player.png" },
+      { "type": "audio", "key": "powerup", "url": "audio/powerup.wav" }
+    ]
+  },
+  "space": {
+    "path": "assets/",
+    "files": [
+      { "type": "image", "key": "space", "url": "images/space.png" },
+      { "type": "image", "key": "player_ship", "url": "images/player_ship.png" },
+      { "type": "image", "key": "enemy_ship", "url": "images/enemy_ship.png" },
+      { "type": "image", "key": "rock", "url": "images/rock.png" },
+      { "type": "audio", "key": "shoot", "url": "audio/shoot.wav" }
+    ]
+  },
+  "picnic": {
+    "path": "assets/",
+    "files": [
+      { "type": "image", "key": "table", "url": "images/table.png" },
+      { "type": "image", "key": "basket", "url": "images/basket.png" },
+      { "type": "image", "key": "fruit", "url": "images/fruit.png" },
+      { "type": "audio", "key": "coin_sound", "url": "audio/coin.wav" }
+    ]
+  },
+  "arena": {
+    "path": "assets/",
+    "files": [
+      { "type": "image", "key": "arena", "url": "images/arena.png" },
+      { "type": "image", "key": "player", "url": "images/player.png" },
+      { "type": "image", "key": "enemy", "url": "images/enemy.png" },
+      { "type": "image", "key": "heart", "url": "images/heart.png" },
+      { "type": "audio", "key": "door", "url": "audio/door.wav" }
+    ]
+  }
+}

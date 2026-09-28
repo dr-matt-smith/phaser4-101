@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="380" viewBox="0 0 780 380" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="380" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">What the loader does with a queue of files</text>
+
+  <!-- the queue -->
+  <text x="110" y="62" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">1. the queue</text>
+  <text x="110" y="80" text-anchor="middle" font-size="12" fill="#1b1f2a">this.load.xxx(key, file)</text>
+  <rect x="20" y="92" width="180" height="30" rx="4" fill="#f1faee" stroke="#457b9d"/>
+  <text x="30" y="112" font-size="12" font-family="Courier New, monospace" fill="#1b1f2a">image  "sky"</text>
+  <rect x="20" y="126" width="180" height="30" rx="4" fill="#f1faee" stroke="#457b9d"/>
+  <text x="30" y="146" font-size="12" font-family="Courier New, monospace" fill="#1b1f2a">spritesheet "hero"</text>
+  <rect x="20" y="160" width="180" height="30" rx="4" fill="#f1faee" stroke="#457b9d"/>
+  <text x="30" y="180" font-size="12" font-family="Courier New, monospace" fill="#1b1f2a">audio  "coin_sound"</text>
+  <rect x="20" y="194" width="180" height="30" rx="4" fill="#f1faee" stroke="#457b9d"/>
+  <text x="30" y="214" font-size="12" font-family="Courier New, monospace" fill="#1b1f2a">json   "level"</text>
+  <rect x="20" y="228" width="180" height="30" rx="4" fill="#f1faee" stroke="#e63946" stroke-dasharray="4 3"/>
+  <text x="30" y="248" font-size="12" font-family="Courier New, monospace" fill="#e63946">image  "missing"</text>
+
+  <!-- the loader -->
+  <rect x="265" y="92" width="210" height="166" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="370" y="62" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">2. the loader: this.load</text>
+  <text x="370" y="80" text-anchor="middle" font-size="12" fill="#1b1f2a">starts after preload(), or on start()</text>
+  <text x="370" y="120" text-anchor="middle" font-size="13" fill="#1b1f2a">asks the web server for</text>
+  <text x="370" y="138" text-anchor="middle" font-size="13" fill="#1b1f2a">many files at once, then</text>
+  <text x="370" y="156" text-anchor="middle" font-size="13" fill="#1b1f2a">turns each into something</text>
+  <text x="370" y="174" text-anchor="middle" font-size="13" fill="#1b1f2a">the game can use: a texture,</text>
+  <text x="370" y="192" text-anchor="middle" font-size="13" fill="#1b1f2a">decoded audio, an object...</text>
+  <text x="370" y="226" text-anchor="middle" font-size="12" fill="#1d3557">a key already in its cache</text>
+  <text x="370" y="242" text-anchor="middle" font-size="12" fill="#1d3557">is skipped, not loaded again</text>
+
+  <!-- the caches -->
+  <text x="650" y="62" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">3. the game's caches</text>
+  <text x="650" y="80" text-anchor="middle" font-size="12" fill="#1b1f2a">shared by every scene</text>
+  <rect x="540" y="92" width="220" height="40" rx="6" fill="#f4a261" stroke="#1d3557"/>
+  <text x="650" y="110" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">this.textures</text>
+  <text x="650" y="125" text-anchor="middle" font-size="11" fill="#1b1f2a">images, sprite sheets</text>
+  <rect x="540" y="138" width="220" height="36" rx="6" fill="#f1faee" stroke="#1d3557"/>
+  <text x="650" y="161" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">this.cache.audio</text>
+  <rect x="540" y="180" width="220" height="36" rx="6" fill="#f1faee" stroke="#1d3557"/>
+  <text x="650" y="203" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">this.cache.json</text>
+  <rect x="540" y="222" width="220" height="36" rx="6" fill="#f1faee" stroke="#1d3557"/>
+  <text x="650" y="245" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">this.cache.text</text>
+
+  <path d="M200 175 L261 175" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M475 175 L536 175" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- the events -->
+  <text x="390" y="296" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">Events on this.load, as it goes</text>
+  <rect x="20" y="310" width="140" height="54" rx="6" fill="#f1faee" stroke="#457b9d"/>
+  <text x="90" y="332" text-anchor="middle" font-size="13" font-weight="bold" font-family="Courier New, monospace" fill="#1b1f2a">"fileprogress"</text>
+  <text x="90" y="352" text-anchor="middle" font-size="11" fill="#1b1f2a">a file is downloading</text>
+  <rect x="170" y="310" width="140" height="54" rx="6" fill="#f1faee" stroke="#457b9d"/>
+  <text x="240" y="332" text-anchor="middle" font-size="13" font-weight="bold" font-family="Courier New, monospace" fill="#1b1f2a">"filecomplete"</text>
+  <text x="240" y="352" text-anchor="middle" font-size="11" fill="#1b1f2a">a file is in its cache</text>
+  <rect x="320" y="310" width="140" height="54" rx="6" fill="#f1faee" stroke="#e63946"/>
+  <text x="390" y="332" text-anchor="middle" font-size="13" font-weight="bold" font-family="Courier New, monospace" fill="#e63946">"loaderror"</text>
+  <text x="390" y="352" text-anchor="middle" font-size="11" fill="#1b1f2a">a file failed</text>
+  <rect x="470" y="310" width="140" height="54" rx="6" fill="#f1faee" stroke="#457b9d"/>
+  <text x="540" y="332" text-anchor="middle" font-size="13" font-weight="bold" font-family="Courier New, monospace" fill="#1b1f2a">"progress"</text>
+  <text x="540" y="352" text-anchor="middle" font-size="11" fill="#1b1f2a">whole queue, 0 to 1</text>
+  <rect x="620" y="310" width="140" height="54" rx="6" fill="#2a9d8f" stroke="#1d3557"/>
+  <text x="690" y="332" text-anchor="middle" font-size="13" font-weight="bold" font-family="Courier New, monospace" fill="#ffffff">"complete"</text>
+  <text x="690" y="352" text-anchor="middle" font-size="11" fill="#ffffff">queue empty; create() next</text>
+</svg>

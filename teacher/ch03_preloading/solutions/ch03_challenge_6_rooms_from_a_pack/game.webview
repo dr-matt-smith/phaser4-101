@@ -1,0 +1,3 @@
+# Opens a web page in an embedded browser.
+# Build the game (1) and serve it (2) in terminal.console first, then open this to play.
+source_url = "http://127.0.0.1:8000/"

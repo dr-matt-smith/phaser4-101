@@ -1,0 +1,685 @@
+<title>Phaser 4 Guide Teacher Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+  :root {
+    --ground: #f5f6fa;
+    --page: #ffffff;
+    --ink: #1b2233;
+    --ink-soft: #4a5367;
+    --rule: #dde1ea;
+    --rail: #eceff5;
+    --accent: #a35f00;
+    --accent-soft: #fbeed8;
+    --amber: #1f8a7e;
+    --amber-soft: #e3f3f0;
+    --code-bg: #f0f2f7;
+    --code-ink: #1b2233;
+    --tok-key: #7b3fb0;
+    --tok-str: #1f7a4d;
+    --tok-num: #b35300;
+    --tok-com: #6b7385;
+    --tok-type: #1d5fa8;
+    --tile-a: #e9a23b;
+    --tile-b: #d18a22;
+    --shadow: 0 1px 2px rgba(27, 34, 51, 0.06), 0 4px 16px rgba(27, 34, 51, 0.06);
+    --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    --body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --ground: #12161f;
+      --page: #181d29;
+      --ink: #e6e9f1;
+      --ink-soft: #a3abbd;
+      --rule: #2b3244;
+      --rail: #151a25;
+      --accent: #f0b14d;
+      --accent-soft: #3a2c14;
+      --amber: #4cc3b3;
+      --amber-soft: #173b39;
+      --code-bg: #10141c;
+      --code-ink: #dfe4ee;
+      --tok-key: #c792ea;
+      --tok-str: #9bd68a;
+      --tok-num: #f7a35c;
+      --tok-com: #7c869b;
+      --tok-type: #7fb4ff;
+      --tile-a: #c9861f;
+      --tile-b: #a86c12;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --ground: #12161f;
+    --page: #181d29;
+    --ink: #e6e9f1;
+    --ink-soft: #a3abbd;
+    --rule: #2b3244;
+    --rail: #151a25;
+    --accent: #f0b14d;
+    --accent-soft: #3a2c14;
+    --amber: #4cc3b3;
+    --amber-soft: #173b39;
+    --code-bg: #10141c;
+    --code-ink: #dfe4ee;
+    --tok-key: #c792ea;
+    --tok-str: #9bd68a;
+    --tok-num: #f7a35c;
+    --tok-com: #7c869b;
+    --tok-type: #7fb4ff;
+    --tile-a: #c9861f;
+    --tile-b: #a86c12;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 var(--body);
+  }
+
+  .shell {
+    display: grid;
+    grid-template-columns: 290px minmax(0, 1fr);
+    min-height: 100vh;
+  }
+
+  /* ---------- the chapter rail ---------- */
+  .rail {
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    align-self: start;
+    height: 100vh;
+    overflow-y: auto;
+    background: var(--rail);
+    border-right: 1px solid var(--rule);
+    padding: 24px 16px 32px;
+  }
+  .brand {
+    display: grid;
+    gap: 2px;
+    padding: 0 8px 20px;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: inherit;
+  }
+  .brand b {
+    font: 800 26px/1.05 var(--display);
+    letter-spacing: -0.01em;
+  }
+  .brand span {
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .part {
+    font: 600 11px/1 var(--body);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--ink-soft);
+    padding: 18px 8px 8px;
+  }
+  .toc {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+  }
+  .toc a {
+    display: grid;
+    grid-template-columns: 28px 1fr;
+    gap: 8px;
+    align-items: baseline;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+  .toc a .n {
+    font: 600 12px/1 var(--mono);
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .toc a:hover { background: var(--page); }
+  .toc a[aria-current="page"] {
+    background: var(--accent-soft);
+    color: var(--ink);
+    font-weight: 600;
+  }
+  .toc a[aria-current="page"] .n { color: var(--accent); }
+  .toc a:focus-visible, .pager a:focus-visible, .menu-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+
+  /* ---------- the phone bar ---------- */
+  .topbar {
+    display: none;
+    position: sticky;
+    top: env(safe-area-inset-top, 0px);
+    z-index: 5;
+    background: var(--rail);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .topbar b { font: 800 18px/1.1 var(--display); }
+  .menu-btn {
+    font: 600 14px/1 var(--body);
+    color: var(--ink);
+    background: var(--page);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 9px 12px;
+    cursor: pointer;
+  }
+
+  /* ---------- the reading column ---------- */
+  main {
+    padding-inline: 48px;
+    padding-block: 40px 64px;
+    min-width: 0;
+  }
+  article {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  .chapter-head {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .tile {
+    flex: none;
+    width: 64px;
+    height: 64px;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+    font: 800 28px/1 var(--display);
+    color: #fff;
+    /* four 32 x 32 tiles - in percentages, so they still fit when the tile is drawn smaller */
+    background:
+      linear-gradient(var(--tile-a), var(--tile-a)) 0 0 / 50% 50% no-repeat,
+      linear-gradient(var(--tile-b), var(--tile-b)) 100% 0 / 50% 50% no-repeat,
+      linear-gradient(var(--tile-b), var(--tile-b)) 0 100% / 50% 50% no-repeat,
+      linear-gradient(var(--tile-a), var(--tile-a)) 100% 100% / 50% 50% no-repeat;
+    box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.18);
+    font-variant-numeric: tabular-nums;
+  }
+  .kicker {
+    font: 600 12px/1 var(--body);
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  article h1 {
+    font: 800 clamp(30px, 4.2vw, 42px)/1.08 var(--display);
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+  article h2 {
+    font: 700 26px/1.2 var(--display);
+    margin: 44px 0 12px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    text-wrap: balance;
+  }
+  article h3 {
+    font: 700 19px/1.3 var(--display);
+    margin: 30px 0 8px;
+    text-wrap: balance;
+  }
+  article h4 { font: 600 16px/1.4 var(--body); margin: 22px 0 6px; }
+  article p, article li { max-width: 68ch; }
+  article p { margin: 0 0 14px; }
+  article ul, article ol { padding-left: 22px; margin: 0 0 16px; }
+  article li { margin: 3px 0; }
+  article li::marker { color: var(--ink-soft); }
+  article a { color: var(--accent); text-underline-offset: 2px; }
+  article strong { font-weight: 600; }
+  article hr { border: 0; border-top: 1px solid var(--rule); margin: 36px 0 18px; }
+
+  article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 18px auto;
+    border-radius: 6px;
+    box-shadow: var(--shadow);
+  }
+  /* diagrams are drawn on white: keep them on a white card in both themes */
+  article img[src^="data:image/svg"] {
+    background: #fff;
+    padding: 10px;
+    box-shadow: none;
+    border: 1px solid var(--rule);
+  }
+
+  article code {
+    font: 0.88em/1.5 var(--mono);
+    background: var(--code-bg);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+  article pre {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    margin: 0 0 18px;
+    font: 13.5px/1.6 var(--mono);
+  }
+  article pre code { background: none; padding: 0; font: inherit; }
+  /* show code exactly as typed: no => or === ligatures */
+  article code, article pre { font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+  /* a file name line just above a code block, as the chapters write it */
+  article p:has(> code:only-child) + pre { margin-top: -8px; }
+
+  .tok-kw { color: var(--tok-key); }
+  .tok-str { color: var(--tok-str); }
+  .tok-num { color: var(--tok-num); }
+  .tok-com { color: var(--tok-com); font-style: italic; }
+  .tok-type { color: var(--tok-type); }
+
+  .table-wrap { overflow-x: auto; margin: 0 0 18px; }
+  article table {
+    border-collapse: collapse;
+    font-size: 14.5px;
+    line-height: 1.45;
+    min-width: 100%;
+  }
+  article th, article td {
+    text-align: left;
+    vertical-align: top;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  article th {
+    font-weight: 600;
+    background: var(--code-bg);
+  }
+
+  article blockquote {
+    margin: 0 0 18px;
+    padding: 12px 16px;
+    background: var(--amber-soft);
+    border-left: 4px solid var(--amber);
+    border-radius: 0 6px 6px 0;
+  }
+  article blockquote p:last-child { margin-bottom: 0; }
+
+  .local {
+    font: 0.86em/1.4 var(--mono);
+    background: var(--code-bg);
+    padding: 1px 5px;
+    border-radius: 4px;
+    border-bottom: 1px dashed var(--ink-soft);
+    cursor: help;
+  }
+
+  .pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--rule);
+    flex-wrap: wrap;
+  }
+  .pager a {
+    display: grid;
+    gap: 2px;
+    text-decoration: none;
+    color: var(--ink);
+    padding: 10px 14px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: var(--page);
+    max-width: 48%;
+  }
+  .pager a span { font-size: 12px; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.08em; }
+  .pager a b { font: 700 16px/1.3 var(--display); }
+  .pager a.next { margin-left: auto; text-align: right; }
+  .note {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 28px;
+  }
+
+  @media (max-width: 900px) {
+    .shell { display: block; }
+    .topbar { display: flex; }
+    .rail {
+      display: none;
+      position: static;
+      height: auto;
+      border-right: 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .rail.open { display: block; }
+    .rail .brand { display: none; }
+    main { padding-inline: 16px; padding-block: 24px 48px; }
+    .tile { width: 48px; height: 48px; font-size: 22px; }
+    .pager a { max-width: 100%; }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .toc a { transition: background 0.12s; }
+  }
+
+  /* ---------- tabs ---------- */
+  .tabs {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin: 22px 0 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .tabs a {
+    padding: 9px 14px;
+    font: 600 14px/1 var(--body);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: -1px;
+  }
+  .tabs a:hover { color: var(--ink); }
+  .tabs a[aria-current="page"] {
+    color: var(--ink);
+    background: var(--page);
+    border-color: var(--rule);
+  }
+  .tabs a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .tab-note { font-size: 14px; color: var(--ink-soft); margin: 14px 0 18px; }
+
+  /* ---------- slide cards ---------- */
+  .deck { display: grid; gap: 22px; margin-top: 18px; }
+  .slide {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    max-width: 100%;
+    background: var(--page);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    container-type: inline-size;
+  }
+  .slide-body {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 3.2cqw 4cqw;
+    overflow: auto;
+    font-size: clamp(11px, 1.9cqw, 17px);
+    line-height: 1.45;
+  }
+  .slide-body h1 { font: 800 4.6cqw/1.1 var(--display); margin: 0 0 1.2cqw; border: 0; padding: 0; }
+  .slide-body h2 { font: 700 3.3cqw/1.15 var(--display); margin: 0 0 1.4cqw; border: 0; padding: 0; }
+  .slide-body h3 { font: 600 2.3cqw/1.2 var(--body); margin: 0 0 1cqw; color: var(--ink-soft); }
+  .slide-body p, .slide-body li { max-width: none; }
+  .slide-body p { margin: 0 0 1cqw; }
+  .slide-body ul, .slide-body ol { margin: 0 0 1cqw; }
+  .slide-body pre { font-size: clamp(9px, 1.45cqw, 14px); padding: 1cqw 1.4cqw; margin: 0 0 1cqw; }
+  .slide-body table { font-size: clamp(10px, 1.6cqw, 15px); }
+  .slide-body img { margin: 0.8cqw auto; box-shadow: none; }
+  .slide-side {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    background: var(--code-bg);
+    border-left: 1px solid var(--rule);
+    padding: 1.5cqw;
+  }
+  .slide-side img { margin: 0; max-height: 100%; object-fit: contain; }
+  .slide-num {
+    position: absolute;
+    right: 1.4cqw;
+    bottom: 1cqw;
+    font: 600 max(10px, 1.3cqw)/1 var(--mono);
+    color: var(--ink-soft);
+    font-variant-numeric: tabular-nums;
+  }
+  .slide.title-slide .slide-body { display: grid; align-content: center; }
+  .slide.title-slide .slide-body h1 { font-size: 6cqw; }
+  @media (max-width: 600px) {
+    .slide { aspect-ratio: auto; flex-direction: column; }
+    .slide-side { border-left: 0; border-top: 1px solid var(--rule); }
+    .slide-side { width: auto !important; }
+  }
+</style>
+
+<div class="shell">
+  <header class="topbar">
+    <b>Teacher kit</b>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="rail">Chapters</button>
+  </header>
+  <nav class="rail" id="rail" aria-label="Chapters">
+    <a class="brand" href="#home">
+      <b>Teacher kit</b>
+      <span>Phaser 4 - a guide for OO programmers</span>
+    </a>
+    <div id="toc"></div>
+  </nav>
+  <main>
+    <article id="page"></article>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script>
+  const KIT = /*__TEACHER_DATA__*/null;
+
+  const byId = new Map(KIT.chapters.map((c) => [c.id, c]));
+  const TABS = [
+    ["notes", "Teacher notes", "teacher_notes.md"],
+    ["solutions", "Solutions", "solutions.md"],
+    ["slides", "Slides", "slides.md"],
+  ];
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+  }
+  function splitTitle(t) {
+    const m = t.match(/^Chapter\s+(\d+)\s+-\s+(.+)$/);
+    return m ? { n: Number(m[1]), name: m[2] } : { n: null, name: t };
+  }
+
+  // ---------- the rail ----------
+  const toc = document.getElementById("toc");
+  (function () {
+    let html = '<ul class="toc"><li><a href="#home" data-id="home"><span class="n">&nbsp;</span><span>Using the kit</span></a></li></ul>';
+    const groups = [["Part 1 - The ideas", 1, 11], ["Part 2 - Games", 12, 15]];
+    for (const [label, from, to] of groups) {
+      html += `<div class="part">${label}</div><ul class="toc">`;
+      for (const c of KIT.chapters) {
+        const { n, name } = splitTitle(c.title);
+        if (n === null || n < from || n > to) continue;
+        html += `<li><a href="#${c.id}" data-id="${c.id}"><span class="n">${String(n).padStart(2, "0")}</span><span>${escapeHtml(name)}</span></a></li>`;
+      }
+      html += "</ul>";
+    }
+    toc.innerHTML = html;
+  })();
+
+  // ---------- markdown ----------
+  // the folder the markdown being rendered lives in, for resolving its relative links
+  let base = "teacher";
+
+  function resolve(href) {
+    const parts = base.split("/");
+    for (const p of href.split("/")) {
+      if (p === "" || p === ".") continue;
+      if (p === "..") parts.pop();
+      else parts.push(p);
+    }
+    return parts.join("/");
+  }
+
+  const TS_KEYWORDS = new Set(("abstract as async await break case catch class const constructor continue declare default delete do else enum export extends false finally for from function get if implements import in instanceof interface keyof let new null of override private protected public readonly return set static super switch this throw true try type typeof undefined var void while yield").split(" "));
+  function highlight(code, lang) {
+    const src = escapeHtml(code);
+    if (!/^(ts|typescript|js|javascript|json)$/.test(lang || "")) return src;
+    const re = /(\/\/[^\n]*|\/\*[\s\S]*?\*\/)|(&quot;(?:[^&]|&(?!quot;))*?&quot;|'[^'\n]*'|`[^`]*`)|\b(\d+(?:\.\d+)?)\b|\b([A-Za-z_$][\w$]*)\b/g;
+    return src.replace(re, (m, com, str, num, word) => {
+      if (com) return `<span class="tok-com">${com}</span>`;
+      if (str) return `<span class="tok-str">${str}</span>`;
+      if (num) return `<span class="tok-num">${num}</span>`;
+      if (word && TS_KEYWORDS.has(word)) return `<span class="tok-kw">${word}</span>`;
+      if (word && /^[A-Z]/.test(word)) return `<span class="tok-type">${word}</span>`;
+      return m;
+    });
+  }
+
+  // MARP image sizes: "w:900" (width, on a 1280-wide slide) and "bg right:45% 90%" (a side picture)
+  let sideImage = null;
+
+  marked.use({
+    gfm: true,
+    renderer: {
+      code(code, lang) {
+        return `<pre><code>${highlight(code, (lang || "").trim())}</code></pre>\n`;
+      },
+      table(header, body) {
+        return `<div class="table-wrap"><table><thead>${header}</thead><tbody>${body}</tbody></table></div>\n`;
+      },
+      image(href, title, text) {
+        const src = KIT.images[resolve(href)];
+        const alt = text || "";
+        const bg = alt.match(/^bg\s+right(?::(\d+)%)?/);
+        if (bg) {
+          sideImage = { src, width: bg[1] ? Number(bg[1]) : 40 };
+          return "";
+        }
+        if (!src) return `<span class="local">[image: ${escapeHtml(alt)}]</span>`;
+        const w = alt.match(/^w:(\d+)/);
+        const style = w ? ` style="width:${(Number(w[1]) / 1280 * 100).toFixed(1)}%"` : "";
+        return `<img src="${src}" alt="${escapeHtml(w ? "" : alt)}"${style} loading="lazy">`;
+      },
+      link(href, title, text) {
+        if (/^https?:/.test(href)) return `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
+        if (href.startsWith("#")) return text;
+        const path = resolve(href);
+        const ch = path.match(/^chapters\/(ch\d\d_[a-z_]+)\/README\.md$/);
+        if (ch && KIT.bookUrl) return `<a href="${KIT.bookUrl}#${ch[1]}" target="_blank" rel="noopener">${text}</a>`;
+        const own = path.match(/^teacher\/(ch\d\d_[a-z_]+)\/(teacher_notes|solutions|slides)\.md$/);
+        if (own) {
+          const tab = { teacher_notes: "notes", solutions: "solutions", slides: "slides" }[own[2]];
+          return `<a href="#${own[1]}.${tab}">${text}</a>`;
+        }
+        return `<span class="local" title="In the book's folder: ${escapeHtml(path)}">${text}</span>`;
+      },
+    },
+  });
+
+  function renderSlides(md) {
+    const body = md.replace(/^---\n[\s\S]*?\n---\n/, "").replace(/<!--[\s\S]*?-->/g, "");
+    const slides = body.split(/\n---\s*\n/).map((s) => s.trim()).filter((s) => s.length > 0);
+    return '<div class="deck">' + slides.map((s, i) => {
+      sideImage = null;
+      const inner = marked.parse(s);
+      const side = sideImage && sideImage.src
+        ? `<div class="slide-side" style="width:${sideImage.width}%"><img src="${sideImage.src}" alt=""></div>`
+        : "";
+      const cls = i === 0 ? "slide title-slide" : "slide";
+      return `<section class="${cls}" aria-label="Slide ${i + 1}"><div class="slide-body">${inner}</div>${side}<span class="slide-num">${i + 1} / ${slides.length}</span></section>`;
+    }).join("") + "</div>";
+  }
+
+  // ---------- pages ----------
+  function render(hash) {
+    const [id, tabWanted] = hash.split(".");
+    const page = document.getElementById("page");
+    let current = id;
+    if (!byId.has(id)) {
+      current = "home";
+      base = "teacher";
+      page.innerHTML = marked.parse(KIT.home) + pager("home") + note();
+      document.title = "Phaser 4 Guide Teacher Kit";
+    } else {
+      const c = byId.get(id);
+      const tab = TABS.some((t) => t[0] === tabWanted) ? tabWanted : "notes";
+      const { n, name } = splitTitle(c.title);
+      base = `teacher/${id}`;
+      const tabs = '<nav class="tabs" aria-label="Materials">' + TABS.map(([key, label]) =>
+        `<a href="#${id}.${key}"${key === tab ? ' aria-current="page"' : ""}>${label}</a>`
+      ).join("") + "</nav>";
+      const bookLink = KIT.bookUrl
+        ? ` The chapter itself is <a href="${KIT.bookUrl}#${id}" target="_blank" rel="noopener">in the book</a>.`
+        : "";
+      let content;
+      if (tab === "slides") {
+        content = `<p class="tab-note">MARP slides (${escapeHtml(`teacher/${id}/slides.md`)}), shown as cards. Present them from the Markdown file with MARP.${bookLink}</p>` + renderSlides(c.slides);
+      } else {
+        const md = tab === "notes" ? c.notes : c.solutions;
+        content = (bookLink ? `<p class="tab-note">${bookLink.trim()}</p>` : "") + marked.parse(md.replace(/^#\s+.+$/m, ""));
+      }
+      page.innerHTML =
+        `<div class="chapter-head"><div class="tile" aria-hidden="true">${n}</div>` +
+        `<div><div class="kicker">Chapter ${n} · Teacher materials</div><h1>${escapeHtml(name)}</h1></div></div>` +
+        tabs + content + pager(id);
+      document.title = `${c.title} · Teacher kit`;
+    }
+    for (const a of toc.querySelectorAll("a")) {
+      if (a.dataset.id === current) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    }
+    window.scrollTo(0, 0);
+    closeMenu();
+  }
+
+  function pager(id) {
+    const order = ["home", ...KIT.chapters.map((c) => c.id)];
+    const i = order.indexOf(id);
+    const link = (j, cls, label) => {
+      if (j < 0 || j >= order.length) return "";
+      const other = order[j];
+      const t = other === "home" ? "Using the kit" : byId.get(other).title;
+      return `<a class="${cls}" href="#${other}"><span>${label}</span><b>${escapeHtml(t)}</b></a>`;
+    };
+    return `<nav class="pager" aria-label="Previous and next">${link(i - 1, "prev", "Previous")}${link(i + 1, "next", "Next")}</nav>`;
+  }
+
+  function note() {
+    const book = KIT.bookUrl ? ` The chapters are in <a href="${KIT.bookUrl}" target="_blank" rel="noopener">the book</a>.` : "";
+    return `<p class="note">This page holds each chapter's teacher notes, worked solutions and slides. The runnable solution projects are in the book's folder, under teacher/ - names shown <span class="local">like this</span> refer to files there.${book}</p>`;
+  }
+
+  // ---------- navigation ----------
+  function route() {
+    render(location.hash.replace(/^#/, "") || "home");
+  }
+  window.addEventListener("hashchange", route);
+
+  const rail = document.getElementById("rail");
+  const menuBtn = document.getElementById("menu-btn");
+  function closeMenu() {
+    rail.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+  }
+  menuBtn.addEventListener("click", () => {
+    const open = rail.classList.toggle("open");
+    menuBtn.setAttribute("aria-expanded", String(open));
+  });
+
+  route();
+</script>

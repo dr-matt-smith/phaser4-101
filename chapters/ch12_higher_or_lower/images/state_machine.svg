@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Arial, Helvetica, sans-serif">
+<rect width="760" height="330" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+<text x="380" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">GameScene's states (intermediate version)</text>
+<rect x="40" y="120" width="170" height="64" rx="10" fill="#f4a261" stroke="#1d3557" stroke-width="2"/><text x="125.0" y="148" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b1f2a">"waiting"</text><text x="125.0" y="168" text-anchor="middle" font-size="12" fill="#1b1f2a">guesses accepted</text>
+<rect x="310" y="120" width="170" height="64" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/><text x="395.0" y="148" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b1f2a">"revealing"</text><text x="395.0" y="168" text-anchor="middle" font-size="12" fill="#1b1f2a">guesses ignored</text>
+<rect x="580" y="50" width="150" height="64" rx="10" fill="#2a9d8f" stroke="#1d3557" stroke-width="2"/><text x="655.0" y="78" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b1f2a">"won"</text><text x="655.0" y="98" text-anchor="middle" font-size="12" fill="#1b1f2a">then GameOverScene</text>
+<rect x="580" y="190" width="150" height="64" rx="10" fill="#e63946" stroke="#1d3557" stroke-width="2"/><text x="655.0" y="218" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b1f2a">"lost"</text><text x="655.0" y="238" text-anchor="middle" font-size="12" fill="#1b1f2a">then GameOverScene</text>
+<path d="M210 140 L306 140" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="258" y="132" text-anchor="middle" font-size="12" fill="#1b1f2a">H, L or a button</text>
+<path d="M310 170 L214 170" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="262" y="190" text-anchor="middle" font-size="12" fill="#1b1f2a">right or tie</text>
+<text x="262" y="205" text-anchor="middle" font-size="12" fill="#1b1f2a">(fewer than 5 in a row)</text>
+<path d="M480 135 L576 90" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="515" y="98" text-anchor="middle" font-size="12" fill="#1b1f2a">5th right</text>
+<path d="M480 170 L576 215" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="515" y="215" text-anchor="middle" font-size="12" fill="#1b1f2a">wrong</text>
+<path d="M125 70 L125 116" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="125" y="62" text-anchor="middle" font-size="12" fill="#1b1f2a">first card turned over</text>
+<text x="380" y="280" text-anchor="middle" font-size="13" fill="#1b1f2a">Every input handler starts with  if (this.state !== "waiting") return;</text>
+<text x="380" y="302" text-anchor="middle" font-size="13" fill="#1b1f2a">so a click or key press during a flip, or after the game is decided, does nothing.</text>
+</svg>

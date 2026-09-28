@@ -1,0 +1,15 @@
+{
+  "tasks": {
+    "build": "deno run --allow-read --allow-write --allow-env --allow-run build.ts",
+    "dev": "deno run --watch=src,public --allow-read --allow-write --allow-env --allow-run build.ts",
+    "check": "deno check src/main.ts",
+    "serve": "deno run --allow-net --allow-read --allow-sys jsr:@std/http@^1/file-server dist --host 127.0.0.1 --port 8000 --no-dir-listing --header \"Cache-Control: no-cache\""
+  },
+  "imports": {
+    "phaser": "npm:phaser@^4.2.1"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noImplicitOverride": true
+  }
+}

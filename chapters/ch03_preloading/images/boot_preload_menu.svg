@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="250" viewBox="0 0 780 250" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="250" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">Boot -&gt; Preload -&gt; Menu</text>
+
+  <rect x="20" y="55" width="200" height="120" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="120" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">BootScene</text>
+  <text x="120" y="108" text-anchor="middle" font-size="13" fill="#1b1f2a">loads only what the</text>
+  <text x="120" y="126" text-anchor="middle" font-size="13" fill="#1b1f2a">loading screen shows:</text>
+  <text x="120" y="148" text-anchor="middle" font-size="13" font-weight="bold" fill="#e63946">logo.png</text>
+  <text x="120" y="166" text-anchor="middle" font-size="12" fill="#457b9d">shows nothing; over in a moment</text>
+
+  <rect x="290" y="55" width="200" height="120" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="390" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">PreloadScene</text>
+  <text x="390" y="106" text-anchor="middle" font-size="13" fill="#1b1f2a">shows the logo, a bar,</text>
+  <text x="390" y="124" text-anchor="middle" font-size="13" fill="#1b1f2a">and the file loading;</text>
+  <text x="390" y="146" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">loads everything else</text>
+  <rect x="315" y="155" width="150" height="10" fill="#2b3245"/>
+  <rect x="317" y="157" width="80" height="6" fill="#ffd166"/>
+
+  <rect x="560" y="55" width="200" height="120" rx="10" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+  <text x="660" y="82" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">MenuScene</text>
+  <text x="660" y="108" text-anchor="middle" font-size="13" fill="#1b1f2a">no preload() at all:</text>
+  <text x="660" y="126" text-anchor="middle" font-size="13" fill="#1b1f2a">every file is already</text>
+  <text x="660" y="144" text-anchor="middle" font-size="13" fill="#1b1f2a">in the game's caches</text>
+
+  <path d="M220 115 L286 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M490 115 L556 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="253" y="105" text-anchor="middle" font-size="11" fill="#1d3557">create()</text>
+  <text x="523" y="105" text-anchor="middle" font-size="11" fill="#1d3557">create()</text>
+
+  <text x="390" y="212" text-anchor="middle" font-size="13" fill="#1b1f2a">Each arrow is a <tspan font-family="Courier New, monospace" font-weight="bold">this.scene.start(...)</tspan> in create() - which only runs once that scene's files have loaded.</text>
+  <text x="390" y="234" text-anchor="middle" font-size="13" fill="#e63946">A loading screen cannot show a picture it is still loading: that is why the boot scene exists.</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="470" viewBox="0 0 780 470" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="470" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">The life of a scene</text>
+
+  <!-- constructor -->
+  <rect x="20" y="60" width="150" height="70" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="95" y="89" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">constructor()</text>
+  <text x="95" y="108" text-anchor="middle" font-size="12" fill="#1b1f2a">ONCE, as the game</text>
+  <text x="95" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">boots</text>
+
+  <!-- start: init preload create -->
+  <rect x="215" y="60" width="130" height="70" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="280" y="89" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">init(data)</text>
+  <text x="280" y="108" text-anchor="middle" font-size="12" fill="#1b1f2a">every start:</text>
+  <text x="280" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">reset fields</text>
+
+  <rect x="375" y="60" width="130" height="70" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="440" y="89" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">preload()</text>
+  <text x="440" y="108" text-anchor="middle" font-size="12" fill="#1b1f2a">queue files; the</text>
+  <text x="440" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">loader runs</text>
+
+  <rect x="535" y="60" width="130" height="70" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="600" y="89" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">create(data)</text>
+  <text x="600" y="108" text-anchor="middle" font-size="12" fill="#1b1f2a">make game objects,</text>
+  <text x="600" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">then CREATE event</text>
+
+  <path d="M170 95 L211 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M345 95 L371 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M505 95 L531 95" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="192" y="86" text-anchor="middle" font-size="11" fill="#457b9d">start</text>
+
+  <!-- running loop -->
+  <rect x="455" y="175" width="300" height="140" rx="12" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+  <text x="605" y="200" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">RUNNING - every frame</text>
+  <text x="475" y="224" font-size="13" fill="#1b1f2a">PRE_UPDATE event</text>
+  <text x="475" y="243" font-size="13" fill="#1b1f2a">UPDATE event: preUpdate() on game</text>
+  <text x="475" y="259" font-size="13" fill="#1b1f2a">   objects, timers, tweens, physics</text>
+  <text x="475" y="278" font-size="13" font-weight="bold" fill="#1b1f2a">update(time, delta)</text>
+  <text x="475" y="297" font-size="13" fill="#1b1f2a">POST_UPDATE event, then drawing</text>
+  <path d="M600 130 L600 171" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- paused / sleeping -->
+  <rect x="455" y="360" width="140" height="80" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="525" y="387" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">PAUSED</text>
+  <text x="525" y="406" text-anchor="middle" font-size="12" fill="#1b1f2a">not updated,</text>
+  <text x="525" y="421" text-anchor="middle" font-size="12" fill="#1b1f2a">still drawn</text>
+  <rect x="615" y="360" width="140" height="80" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="685" y="387" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">SLEEPING</text>
+  <text x="685" y="406" text-anchor="middle" font-size="12" fill="#1b1f2a">not updated,</text>
+  <text x="685" y="421" text-anchor="middle" font-size="12" fill="#1b1f2a">not drawn</text>
+  <path d="M510 315 L510 356" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M540 356 L540 319" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="503" y="341" text-anchor="end" font-size="11" fill="#457b9d">pause</text>
+  <text x="547" y="341" font-size="11" fill="#457b9d">resume</text>
+  <path d="M670 315 L670 356" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M700 356 L700 319" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="663" y="341" text-anchor="end" font-size="11" fill="#457b9d">sleep</text>
+  <text x="707" y="341" font-size="11" fill="#457b9d">wake</text>
+
+  <!-- shutdown -->
+  <rect x="200" y="210" width="190" height="80" rx="10" fill="#ffffff" stroke="#e63946" stroke-width="2"/>
+  <text x="295" y="237" text-anchor="middle" font-size="15" font-weight="bold" fill="#e63946">SHUTDOWN event</text>
+  <text x="295" y="256" text-anchor="middle" font-size="12" fill="#1b1f2a">game objects, timers, tweens,</text>
+  <text x="295" y="271" text-anchor="middle" font-size="12" fill="#1b1f2a">input listeners all cleared</text>
+  <path d="M455 250 L394 250" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="424" y="242" text-anchor="middle" font-size="11" fill="#457b9d">stop</text>
+  <path d="M260 210 L260 134" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="252" y="180" text-anchor="end" font-size="11" fill="#457b9d">start /</text>
+  <text x="252" y="194" text-anchor="end" font-size="11" fill="#457b9d">restart</text>
+
+  <!-- destroy -->
+  <rect x="20" y="360" width="190" height="80" rx="10" fill="#ffffff" stroke="#1b1f2a" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="115" y="387" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">DESTROY event</text>
+  <text x="115" y="406" text-anchor="middle" font-size="12" fill="#1b1f2a">scene.remove(): gone for</text>
+  <text x="115" y="421" text-anchor="middle" font-size="12" fill="#1b1f2a">good - cannot restart</text>
+  <path d="M250 290 L160 356" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="196" y="316" text-anchor="end" font-size="11" fill="#457b9d">remove</text>
+
+  <text x="235" y="425" font-size="12" fill="#e63946">Restarting runs init() again - never</text>
+  <text x="235" y="441" font-size="12" fill="#e63946">the constructor. It is the same object.</text>
+</svg>

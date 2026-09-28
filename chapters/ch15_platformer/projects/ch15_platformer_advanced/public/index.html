@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Platformer (advanced)</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>Mouse or 1 2 3</kbd>
+          <span>Choose a level (finish one to unlock the next)</span>
+          <kbd>&larr; &rarr;</kbd>
+          <span>Run; step off a ladder</span>
+          <kbd>&uarr; or Space</kbd>
+          <span>Jump - hold for a higher jump</span>
+          <kbd>&uarr; &darr;</kbd>
+          <span>Climb a ladder (&darr; on top of one to climb down)</span>
+          <kbd>Space</kbd>
+          <span>Carry on (result screen); jump off a ladder</span>
+          <kbd>Esc</kbd>
+          <span>Back to the level select</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

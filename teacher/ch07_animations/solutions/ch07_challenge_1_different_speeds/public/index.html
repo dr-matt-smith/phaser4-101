@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Animation Lab</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>1 - 6</kbd>
+          <span>Play idle, run, run (keep going), jump, fall, hurt</span>
+          <!-- CHALLENGE 1 -->
+          <kbd>7</kbd>
+          <span>Play sprint (run frames at 20 fps)</span>
+          <kbd>C</kbd>
+          <span>Hurt, then chain idle</span>
+          <kbd>A</kbd>
+          <span>Idle after the current loop (playAfterRepeat)</span>
+          <kbd>S</kbd>
+          <span>Stop</span>
+          <kbd>P</kbd>
+          <span>Pause / resume</span>
+          <kbd>F</kbd>
+          <span>Flip left / right</span>
+          <kbd>Up / Down</kbd>
+          <span>Animation faster / slower (timeScale)</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

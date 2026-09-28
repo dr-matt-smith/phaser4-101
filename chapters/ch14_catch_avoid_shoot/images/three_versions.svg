@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="400" viewBox="0 0 780 400" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="400" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">One game, three times - each version keeps the last one's ideas and adds more</text>
+
+  <rect x="20" y="55" width="220" height="320" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2.5"/>
+  <text x="130" y="85" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d3557">Fruit Catcher</text>
+  <text x="130" y="105" text-anchor="middle" font-size="12" fill="#457b9d">ch14_catcher_simple</text>
+  <g font-size="13" fill="#1b1f2a">
+    <text x="36" y="140">- a player held to the bottom,</text>
+    <text x="48" y="158">moved left and right</text>
+    <text x="36" y="184">- a spawn timer</text>
+    <text x="48" y="202">(time.addEvent, loop)</text>
+    <text x="36" y="228">- things that fall: physics</text>
+    <text x="48" y="246">groups with gravityY</text>
+    <text x="36" y="272">- overlap: catch or be hit</text>
+    <text x="36" y="298">- score, lives, game over</text>
+    <text x="36" y="324">- made with create(),</text>
+    <text x="48" y="342">thrown away with destroy()</text>
+  </g>
+
+  <rect x="280" y="55" width="220" height="320" rx="12" fill="#a8dadc" stroke="#1d3557" stroke-width="2.5"/>
+  <text x="390" y="85" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d3557">Space Shooter</text>
+  <text x="390" y="105" text-anchor="middle" font-size="12" fill="#1d3557">ch14_shooter_intermediate</text>
+  <g font-size="13" fill="#1b1f2a">
+    <text x="296" y="140">+ the player fires, at a</text>
+    <text x="308" y="158">limited fire rate</text>
+    <text x="296" y="184">+ OBJECT POOLS: bullets and</text>
+    <text x="308" y="202">enemies reused, not destroyed</text>
+    <text x="296" y="228">+ waves: a row (tweens) and</text>
+    <text x="308" y="246">a stream (a repeating timer)</text>
+    <text x="296" y="272">+ harder every wave</text>
+    <text x="296" y="298">+ explosions and particles</text>
+    <text x="296" y="324">+ flashing invulnerability</text>
+    <text x="296" y="350">+ a parallax starfield</text>
+  </g>
+
+  <rect x="540" y="55" width="220" height="320" rx="12" fill="#fff3e6" stroke="#f4a261" stroke-width="2.5"/>
+  <text x="650" y="85" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d3557">Space Shooter Deluxe</text>
+  <text x="650" y="105" text-anchor="middle" font-size="12" fill="#e63946">ch14_shooter_advanced</text>
+  <g font-size="13" fill="#1b1f2a">
+    <text x="556" y="140">+ levels, described as data</text>
+    <text x="556" y="166">+ a third wave: a curved path</text>
+    <text x="556" y="192">+ enemies that shoot back</text>
+    <text x="556" y="218">+ a boss with a health bar</text>
+    <text x="556" y="244">+ power-ups that wear off</text>
+    <text x="556" y="270">+ a HUD scene fed by events</text>
+    <text x="556" y="296">+ music, preloader, menu</text>
+    <text x="556" y="322">+ high scores that last</text>
+    <text x="568" y="340">(localStorage)</text>
+  </g>
+
+  <path d="M240 215 L276 215" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M500 215 L536 215" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+</svg>

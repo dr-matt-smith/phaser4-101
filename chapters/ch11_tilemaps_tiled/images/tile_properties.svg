@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="310" viewBox="0 0 800 310" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker>
+<image id="platform" width="256" height="64" xlink:href="data:image/png;base64,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"/>
+</defs>
+<rect width="800" height="310" fill="#ffffff"/>
+<text x="20" y="26" font-size="14" fill="#1b1f2a" font-weight="bold">The tileset, with a custom property on some of its tiles</text>
+<rect x="17" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="20" y="44" width="40" height="40" viewBox="0 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="17" y="41" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="40" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">0</text>
+<text x="40" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">grass top</text>
+<rect x="67" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="70" y="44" width="40" height="40" viewBox="32 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="67" y="41" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="90" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">1</text>
+<text x="90" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">dirt</text>
+<rect x="117" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="120" y="44" width="40" height="40" viewBox="64 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="117" y="41" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="140" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">2</text>
+<text x="140" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">grass left</text>
+<rect x="167" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="170" y="44" width="40" height="40" viewBox="96 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="167" y="41" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="190" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">3</text>
+<text x="190" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">grass right</text>
+<rect x="217" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="220" y="44" width="40" height="40" viewBox="128 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="217" y="41" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="240" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">4</text>
+<text x="240" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">brick</text>
+<rect x="267" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="270" y="44" width="40" height="40" viewBox="160 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="267" y="41" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="290" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">5</text>
+<text x="290" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">stone</text>
+<rect x="317" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="320" y="44" width="40" height="40" viewBox="192 0 32 32"><use xlink:href="#platform"/></svg>
+<rect x="317" y="41" width="46" height="46" rx="3" fill="none" stroke="#f4a261" stroke-width="3"/>
+<text x="340" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">6</text>
+<text x="340" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">spikes</text>
+<rect x="367" y="41" width="46" height="46" fill="#eef2f7"/>
+<svg x="370" y="44" width="40" height="40" viewBox="224 0 32 32"><use xlink:href="#platform"/></svg>
+<text x="390" y="100" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">7</text>
+<text x="390" y="112" font-size="9.5" fill="#457b9d" text-anchor="middle">ladder</text>
+<rect x="17" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="20" y="120" width="40" height="40" viewBox="0 32 32 32"><use xlink:href="#platform"/></svg>
+<rect x="17" y="117" width="46" height="46" rx="3" fill="none" stroke="#f4a261" stroke-width="3"/>
+<text x="40" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">8</text>
+<text x="40" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">water</text>
+<rect x="67" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="70" y="120" width="40" height="40" viewBox="32 32 32 32"><use xlink:href="#platform"/></svg>
+<rect x="67" y="117" width="46" height="46" rx="3" fill="none" stroke="#f4a261" stroke-width="3"/>
+<text x="90" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">9</text>
+<text x="90" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">lava</text>
+<rect x="117" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="120" y="120" width="40" height="40" viewBox="64 32 32 32"><use xlink:href="#platform"/></svg>
+<rect x="117" y="117" width="46" height="46" rx="3" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="140" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">10</text>
+<text x="140" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">crate</text>
+<rect x="167" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="170" y="120" width="40" height="40" viewBox="96 32 32 32"><use xlink:href="#platform"/></svg>
+<text x="190" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">11</text>
+<text x="190" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">door top</text>
+<rect x="217" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="220" y="120" width="40" height="40" viewBox="128 32 32 32"><use xlink:href="#platform"/></svg>
+<text x="240" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">12</text>
+<text x="240" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">door</text>
+<rect x="267" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="270" y="120" width="40" height="40" viewBox="160 32 32 32"><use xlink:href="#platform"/></svg>
+<text x="290" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">13</text>
+<text x="290" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">flag</text>
+<rect x="317" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="320" y="120" width="40" height="40" viewBox="192 32 32 32"><use xlink:href="#platform"/></svg>
+<text x="340" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">14</text>
+<text x="340" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">bush</text>
+<rect x="367" y="117" width="46" height="46" fill="#eef2f7"/>
+<svg x="370" y="120" width="40" height="40" viewBox="224 32 32 32"><use xlink:href="#platform"/></svg>
+<text x="390" y="176" font-size="11" fill="#1b1f2a" font-weight="bold" text-anchor="middle">15</text>
+<text x="390" y="188" font-size="9.5" fill="#457b9d" text-anchor="middle">sign</text>
+<rect x="20" y="206" width="14" height="14" rx="2" fill="none" stroke="#e63946" stroke-width="3"/>
+<text x="42" y="218" font-size="12" fill="#1b1f2a">collides = true  (solid: the player stands on these)</text>
+<rect x="20" y="230" width="14" height="14" rx="2" fill="none" stroke="#f4a261" stroke-width="3"/>
+<text x="42" y="242" font-size="12" fill="#1b1f2a">hazard = true  (touch one and you start again)</text>
+<text x="20" y="270" font-size="12" fill="#457b9d">Tiles with no box have no custom properties at all.</text>
+<text x="20" y="288" font-size="12" fill="#457b9d">The numbers are tile INDEXES within the tileset, from 0 (see the GIDs diagram).</text>
+<rect x="450" y="44" width="330" height="250" rx="3" fill="#f7f9fc" stroke="#d9dee8" stroke-width="1"/>
+<rect x="450" y="44" width="330" height="20" fill="#a8dadc"/>
+<text x="458" y="58" font-size="12" fill="#1b1f2a" font-weight="bold">Properties  (7 tiles selected)</text>
+<rect x="451" y="68" width="328" height="19" fill="#e3e8f0"/>
+<text x="458" y="82" font-size="11.5" fill="#1b1f2a" font-weight="bold">Tile</text>
+<text x="458" y="104" font-size="11.5" fill="#1b1f2a">ID</text>
+<text x="580" y="104" font-size="11.5" fill="#457b9d">0</text>
+<text x="458" y="126" font-size="11.5" fill="#1b1f2a">Class</text>
+<text x="580" y="126" font-size="11.5" fill="#457b9d"></text>
+<text x="458" y="148" font-size="11.5" fill="#1b1f2a">Probability</text>
+<text x="580" y="148" font-size="11.5" fill="#457b9d">1</text>
+<rect x="451" y="156" width="328" height="19" fill="#e3e8f0"/>
+<text x="458" y="170" font-size="11.5" fill="#1b1f2a" font-weight="bold">Custom Properties</text>
+<text x="458" y="192" font-size="12" fill="#1b1f2a" font-weight="bold">collides</text>
+<rect x="580" y="181" width="14" height="14" rx="2" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<path d="M583,188 l3,4 l6,-9" fill="none" stroke="#1d3557" stroke-width="2"/>
+<text x="600" y="192" font-size="12" fill="#1b1f2a">true</text>
+<rect x="458" y="262" width="22" height="20" rx="3" fill="#ffffff" stroke="#457b9d" stroke-width="1"/>
+<text x="469" y="277" font-size="15" fill="#457b9d" font-weight="bold" text-anchor="middle">+</text>
+<text x="486" y="276" font-size="11" fill="#457b9d">Add Property:  name collides, type bool</text>
+<circle cx="768" cy="188" r="10" fill="#e63946"/><text x="768" y="192.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+<circle cx="768" cy="272" r="10" fill="#e63946"/><text x="768" y="276.5" font-size="12" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+<text x="458" y="222" font-size="11" fill="#1b1f2a">1  tick it - the value is true</text>
+<text x="458" y="240" font-size="11" fill="#1b1f2a">2  select several tiles first to add it to them all</text>
+</svg>

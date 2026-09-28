@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="330" viewBox="0 0 780 330" font-family="Arial" fill="#1b1f2a">
+  <rect width="780" height="330" fill="#ffffff"/>
+  <text x="390" y="26" font-size="18" font-weight="bold" text-anchor="middle">One tween, over time: { delay, duration, hold, yoyo: true, repeat: 1, repeatDelay }</text>
+  <g fill-opacity="0.35">
+    <rect x="70.0" y="60" width="50.6" height="190" fill="#9aa4bd"/>
+    <rect x="120.6" y="60" width="110.4" height="190" fill="#2a9d8f"/>
+    <rect x="231.0" y="60" width="41.4" height="190" fill="#f4a261"/>
+    <rect x="272.4" y="60" width="110.4" height="190" fill="#457b9d"/>
+    <rect x="382.8" y="60" width="50.6" height="190" fill="#9aa4bd"/>
+    <rect x="433.4" y="60" width="110.4" height="190" fill="#2a9d8f"/>
+    <rect x="543.8" y="60" width="41.4" height="190" fill="#f4a261"/>
+    <rect x="585.2" y="60" width="110.4" height="190" fill="#457b9d"/>
+  </g>
+  <line x1="70" y1="250" x2="770" y2="250" stroke="#1b1f2a" stroke-width="2"/>
+  <line x1="70" y1="250" x2="70" y2="55" stroke="#1b1f2a" stroke-width="2"/>
+  <text x="62" y="254" font-size="13" text-anchor="end">start</text>
+  <text x="62" y="94" font-size="13" text-anchor="end">end</text>
+  <text x="62" y="70" font-size="13" text-anchor="end">value</text>
+  <text x="770" y="272" font-size="13" text-anchor="end">time</text>
+  <line x1="70" y1="90" x2="695.6" y2="90" stroke="#1d3557" stroke-dasharray="4 4" stroke-opacity="0.5"/>
+  <path d="M70.0 250 L120.6 250 C164.8 250 186.8 90 231.0 90 L272.4 90 C316.6 90 338.6 250 382.8 250 L433.4 250 C477.6 250 499.6 90 543.8 90 L585.2 90 C629.4 90 651.4 250 695.6 250" fill="none" stroke="#e63946" stroke-width="4"/>
+  <line x1="695.6" y1="60" x2="695.6" y2="250" stroke="#1d3557" stroke-width="2" stroke-dasharray="3 3"/>
+  <text x="701.6" y="160" font-size="13">onComplete</text>
+  <g font-size="13" text-anchor="middle">
+    <text x="95.3" y="290">delay</text>
+    <text x="175.8" y="290">duration</text>
+    <text x="175.8" y="306">(eased)</text>
+    <text x="251.7" y="290">hold</text>
+    <text x="327.6" y="290">yoyo: back</text>
+    <text x="327.6" y="306">(duration again)</text>
+    <text x="408.1" y="290">repeat</text>
+    <text x="408.1" y="306">Delay</text>
+    <text x="488.6" y="290">repeat: 1</text>
+    <text x="488.6" y="306">once more</text>
+    <text x="564.5" y="290">hold</text>
+    <text x="640.4" y="290">yoyo</text>
+    <text x="640.4" y="306">back</text>
+  </g>
+</svg>

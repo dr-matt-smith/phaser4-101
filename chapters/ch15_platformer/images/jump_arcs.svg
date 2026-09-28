@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" font-family="Arial, Helvetica, sans-serif">
+  <rect width="800" height="360" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1b1f2a">A jump is a velocity; gravity bends it into an arc</text>
+
+  <!-- ground -->
+  <rect x="30" y="300" width="740" height="24" fill="#a8dadc"/>
+  <line x1="30" y1="300" x2="770" y2="300" stroke="#2a9d8f" stroke-width="4"/>
+
+  <!-- held jump: full parabola, peak 150 up -->
+  <path d="M 90 300 Q 330 0 570 300" fill="none" stroke="#1d3557" stroke-width="3"/>
+  <circle cx="330" cy="150" r="5" fill="#1d3557"/>
+  <text x="330" y="136" text-anchor="middle" font-size="15" fill="#1d3557">key held: the full height</text>
+  <line x1="600" y1="150" x2="600" y2="300" stroke="#457b9d" stroke-width="2" stroke-dasharray="5 4"/>
+  <line x1="590" y1="150" x2="610" y2="150" stroke="#457b9d" stroke-width="2"/>
+  <text x="612" y="222" font-size="14" fill="#457b9d">height = speed&#178; / (2 &#215; gravity)</text>
+  <text x="612" y="241" font-size="14" fill="#457b9d">600&#178; / 2400 = 150 pixels</text>
+
+  <!-- tap: rises, cut, small arc -->
+  <path d="M 90 300 L 118 250 Q 150 205 190 300" fill="none" stroke="#e63946" stroke-width="3"/>
+  <circle cx="118" cy="250" r="5" fill="#e63946"/>
+  <line x1="118" y1="250" x2="200" y2="215" stroke="#e63946" stroke-width="1.5"/>
+  <text x="204" y="206" font-size="15" fill="#e63946">key let go: upward speed x 0.4</text>
+  <text x="204" y="224" font-size="15" fill="#e63946">- a short hop</text>
+
+  <!-- arrows at the start -->
+  <line x1="60" y1="290" x2="60" y2="200" stroke="#1b1f2a" stroke-width="2.5"/>
+  <polygon points="60,188 53,204 67,204" fill="#1b1f2a"/>
+  <text x="40" y="180" font-size="14" fill="#1b1f2a">setVelocityY(-600)</text>
+
+  <line x1="720" y1="70" x2="720" y2="130" stroke="#f4a261" stroke-width="3"/>
+  <polygon points="720,142 713,126 727,126" fill="#f4a261"/>
+  <text x="720" y="60" text-anchor="middle" font-size="14" fill="#1b1f2a">gravity 1200</text>
+  <text x="720" y="160" text-anchor="middle" font-size="12" fill="#1b1f2a">(pixels per second,</text>
+  <text x="720" y="175" text-anchor="middle" font-size="12" fill="#1b1f2a">every second)</text>
+
+  <text x="400" y="348" text-anchor="middle" font-size="14" fill="#1b1f2a">Upward speed shrinks by 1200 pixels per second every second, reaches 0 at the top, then the hero falls.</text>
+</svg>

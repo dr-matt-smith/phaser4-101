@@ -1,0 +1,5 @@
+This is a plain text file.
+
+Phaser loaded it with this.load.text, and the scene read it back with this.cache.text.get.
+
+Change this file, build again, and refresh: no code changes needed.

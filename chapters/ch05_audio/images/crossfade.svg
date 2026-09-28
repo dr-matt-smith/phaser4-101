@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" font-family="Arial, Helvetica, sans-serif">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">A cross-fade: two tweens at once, over FADE_TIME (1000 ms)</text>
+
+  <line x1="90" y1="240" x2="660" y2="240" stroke="#1b1f2a" stroke-width="2"/>
+  <line x1="90" y1="240" x2="90" y2="60" stroke="#1b1f2a" stroke-width="2"/>
+  <text x="80" y="244" text-anchor="end" font-size="12" fill="#1b1f2a">0</text>
+  <text x="80" y="94" text-anchor="end" font-size="12" fill="#1b1f2a">0.6</text>
+  <text x="40" y="160" text-anchor="middle" font-size="13" fill="#1b1f2a" transform="rotate(-90 40 160)">volume</text>
+  <line x1="86" y1="90" x2="660" y2="90" stroke="#a8dadc" stroke-width="1" stroke-dasharray="4 4"/>
+
+  <line x1="220" y1="240" x2="220" y2="246" stroke="#1b1f2a" stroke-width="2"/>
+  <line x1="520" y1="240" x2="520" y2="246" stroke="#1b1f2a" stroke-width="2"/>
+  <text x="220" y="262" text-anchor="middle" font-size="12" fill="#1b1f2a">GameScene.create()</text>
+  <text x="220" y="277" text-anchor="middle" font-size="12" fill="#1b1f2a">calls Music.play</text>
+  <text x="520" y="262" text-anchor="middle" font-size="12" fill="#1b1f2a">1000 ms later</text>
+  <text x="660" y="262" text-anchor="end" font-size="12" fill="#1b1f2a">time</text>
+
+  <path d="M90 90 L220 90 L520 238" fill="none" stroke="#457b9d" stroke-width="4"/>
+  <text x="130" y="80" font-size="13" font-weight="bold" fill="#457b9d">music_menu</text>
+  <text x="530" y="226" font-size="12" fill="#457b9d">onComplete: pause()</text>
+
+  <path d="M220 238 L520 90 L660 90" fill="none" stroke="#e63946" stroke-width="4"/>
+  <text x="540" y="80" font-size="13" font-weight="bold" fill="#e63946">music_game</text>
+  <text x="300" y="215" font-size="12" fill="#e63946">added at volume 0, played</text>
+</svg>

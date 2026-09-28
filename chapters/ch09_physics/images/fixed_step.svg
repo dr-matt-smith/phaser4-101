@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="300" fill="#ffffff"/>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">Frames come when they can - physics steps are always 1/60 s</text>
+
+  <line x1="60" y1="105" x2="720" y2="105" stroke="#1b1f2a" stroke-width="2"/>
+  <line x1="60" y1="205" x2="720" y2="205" stroke="#1b1f2a" stroke-width="2"/>
+  <text x="60" y="70" font-size="14" font-weight="bold" fill="#1d3557">frames (update, draw)</text>
+  <text x="60" y="170" font-size="14" font-weight="bold" fill="#2a9d8f">physics steps (every 16.7 ms)</text>
+
+  <!-- time scale: 1 ms = 6 px, starting at x=60 -->
+  <!-- frames at 0, 17, 34, 68 (a slow frame), 76 (a quick one), 93 -->
+  <g fill="#457b9d">
+    <rect x="57" y="90" width="6" height="30"/>
+    <rect x="159" y="90" width="6" height="30"/>
+    <rect x="261" y="90" width="6" height="30"/>
+    <rect x="465" y="90" width="6" height="30"/>
+    <rect x="513" y="90" width="6" height="30"/>
+    <rect x="615" y="90" width="6" height="30"/>
+  </g>
+  <!-- steps every 16.67 ms: 0,16.7,33.3,50,66.7,83.3,100 -->
+  <g fill="#2a9d8f">
+    <circle cx="60" cy="205" r="7"/>
+    <circle cx="160" cy="205" r="7"/>
+    <circle cx="260" cy="205" r="7"/>
+    <circle cx="360" cy="205" r="7"/>
+    <circle cx="460" cy="205" r="7"/>
+    <circle cx="560" cy="205" r="7"/>
+    <circle cx="660" cy="205" r="7"/>
+  </g>
+
+  <text x="366" y="140" text-anchor="middle" font-size="13" fill="#e63946">a slow frame (34 ms):</text>
+  <text x="366" y="156" text-anchor="middle" font-size="13" fill="#e63946">two steps run in it</text>
+  <path d="M264 122 L264 190" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="M468 122 L468 190" stroke="#e63946" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <text x="580" y="140" text-anchor="middle" font-size="13" fill="#f4a261">a quick frame (8 ms):</text>
+  <text x="580" y="156" text-anchor="middle" font-size="13" fill="#f4a261">no step at all</text>
+
+  <text x="60" y="240" font-size="12" fill="#1b1f2a">0 ms</text>
+  <text x="660" y="240" text-anchor="middle" font-size="12" fill="#1b1f2a">100 ms</text>
+  <text x="380" y="272" text-anchor="middle" font-size="14" fill="#1b1f2a">Every step uses the same dt, so a ball falls the same way on a fast computer and a slow one.</text>
+  <text x="380" y="291" text-anchor="middle" font-size="14" fill="#1b1f2a">Phaser keeps the leftover time and adds it to the next frame.</text>
+</svg>

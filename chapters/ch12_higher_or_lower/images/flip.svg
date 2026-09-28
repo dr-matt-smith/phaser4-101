@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Arial, Helvetica, sans-serif">
+<rect width="760" height="300" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+<text x="380" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">A flip is two tweens of scaleX, with the picture changed in the middle</text>
+<rect x="40.0" y="74.0" width="80.0" height="112" rx="6.0" fill="#457b9d" stroke="#1d3557" stroke-width="2"/>
+<rect x="45.0" y="79.0" width="70.0" height="102" rx="4.0" fill="none" stroke="#a8dadc" stroke-width="1.5"/>
+<text x="80" y="210.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">scaleX 1</text>
+<rect x="205.0" y="74.0" width="40.0" height="112" rx="3.0" fill="#457b9d" stroke="#1d3557" stroke-width="2"/>
+<rect x="207.5" y="79.0" width="35.0" height="102" rx="2.0" fill="none" stroke="#a8dadc" stroke-width="1.5"/>
+<text x="225" y="210.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">0.5</text>
+<line x1="380" y1="74.0" x2="380" y2="186.0" stroke="#1d3557" stroke-width="3"/>
+<text x="380" y="210.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">0</text>
+<rect x="515.0" y="74.0" width="40.0" height="112" rx="3.0" fill="#f1faee" stroke="#1d3557" stroke-width="2"/>
+<text x="535" y="144" text-anchor="middle" font-size="40" fill="#e63946" transform="translate(535 0) scale(0.5 1) translate(-535 0)">7&#9829;</text>
+<text x="535" y="210.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">0.5</text>
+<rect x="640.0" y="74.0" width="80.0" height="112" rx="6.0" fill="#f1faee" stroke="#1d3557" stroke-width="2"/>
+<text x="680" y="144" text-anchor="middle" font-size="40" fill="#e63946" transform="translate(680 0) scale(1 1) translate(-680 0)">7&#9829;</text>
+<text x="680" y="210.0" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">scaleX 1</text>
+<path d="M125 130 L185 130" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<path d="M270 130 L350 130" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<path d="M410 130 L490 130" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<path d="M580 130 L630 130" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<rect x="60" y="232" width="290" height="50" rx="8" fill="#a8dadc"/>
+<text x="205" y="253" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">tween 1: scaleX to 0, 150 ms</text>
+<text x="205" y="271" text-anchor="middle" font-size="12" fill="#1b1f2a">ease "Sine.easeIn" - speeds up as it closes</text>
+<rect x="410" y="232" width="290" height="50" rx="8" fill="#a8dadc"/>
+<text x="555" y="253" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">tween 2: scaleX back, 150 ms</text>
+<text x="555" y="271" text-anchor="middle" font-size="12" fill="#1b1f2a">ease "Sine.easeOut" - slows down as it opens</text>
+<text x="380" y="50" text-anchor="middle" font-size="13" fill="#e63946">setFrame(...) here, while the card</text>
+<text x="380" y="65" text-anchor="middle" font-size="13" fill="#e63946">is too thin to see</text>
+</svg>

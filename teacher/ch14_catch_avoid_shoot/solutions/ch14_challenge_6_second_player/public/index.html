@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Space Shooter</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <!-- CHALLENGE 6: two players -->
+          <kbd>&larr; &rarr;</kbd>
+          <span>Player 1: move</span>
+          <kbd>Space</kbd>
+          <span>Player 1: hold to fire; also start and play again</span>
+          <kbd>A D</kbd>
+          <span>Player 2: move</span>
+          <kbd>W</kbd>
+          <span>Player 2: hold to fire</span>
+          <kbd>Esc</kbd>
+          <span>Title screen (from game over)</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

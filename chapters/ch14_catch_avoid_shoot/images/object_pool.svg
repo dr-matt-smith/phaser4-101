@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="380" viewBox="0 0 780 380" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="380" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">An object pool: the same few bullets, switched on and off again and again</text>
+
+  <!-- the pool -->
+  <rect x="30" y="70" width="250" height="240" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2.5"/>
+  <text x="155" y="98" text-anchor="middle" font-size="16" font-weight="bold" fill="#1d3557">the pool (a physics group)</text>
+  <text x="155" y="118" text-anchor="middle" font-size="12" fill="#1b1f2a">maxSize: 12</text>
+  <g font-size="12" text-anchor="middle">
+    <rect x="50" y="135" width="60" height="44" rx="6" fill="#ffd166" stroke="#1d3557"/><text x="80" y="155" fill="#1b1f2a">active</text><text x="80" y="170" fill="#1b1f2a">flying</text>
+    <rect x="125" y="135" width="60" height="44" rx="6" fill="#ffd166" stroke="#1d3557"/><text x="155" y="155" fill="#1b1f2a">active</text><text x="155" y="170" fill="#1b1f2a">flying</text>
+    <rect x="200" y="135" width="60" height="44" rx="6" fill="#dddddd" stroke="#888888" stroke-dasharray="4 3"/><text x="230" y="155" fill="#555555">off</text><text x="230" y="170" fill="#555555">waiting</text>
+    <rect x="50" y="195" width="60" height="44" rx="6" fill="#dddddd" stroke="#888888" stroke-dasharray="4 3"/><text x="80" y="215" fill="#555555">off</text><text x="80" y="230" fill="#555555">waiting</text>
+    <rect x="125" y="195" width="60" height="44" rx="6" fill="#ffd166" stroke="#1d3557"/><text x="155" y="215" fill="#1b1f2a">active</text><text x="155" y="230" fill="#1b1f2a">flying</text>
+    <rect x="200" y="195" width="60" height="44" rx="6" fill="#ffffff" stroke="#bbbbbb" stroke-dasharray="2 4"/><text x="230" y="215" fill="#999999">not made</text><text x="230" y="230" fill="#999999">yet</text>
+  </g>
+  <text x="155" y="270" text-anchor="middle" font-size="12" fill="#1b1f2a">countActive() = 3</text>
+  <text x="155" y="288" text-anchor="middle" font-size="12" fill="#1b1f2a">getLength() = 5</text>
+
+  <!-- get -->
+  <rect x="360" y="70" width="390" height="95" rx="12" fill="#a8dadc" stroke="#1d3557" stroke-width="2.5"/>
+  <text x="380" y="98" font-size="15" font-weight="bold" fill="#1d3557">pool.get()   then   bullet.fire(x, y)</text>
+  <text x="380" y="122" font-size="12" fill="#1b1f2a">get(): the first bullet that is OFF - or a new one, if there are fewer</text>
+  <text x="380" y="138" font-size="12" fill="#1b1f2a">than maxSize - or null if all are in use</text>
+  <text x="380" y="156" font-size="12" fill="#1b1f2a">fire(): enableBody(true, x, y, true, true) + a velocity</text>
+
+  <!-- kill -->
+  <rect x="360" y="215" width="390" height="95" rx="12" fill="#fff3e6" stroke="#f4a261" stroke-width="2.5"/>
+  <text x="380" y="243" font-size="15" font-weight="bold" fill="#1d3557">bullet.kill()</text>
+  <text x="380" y="267" font-size="12" fill="#1b1f2a">when it leaves the screen, or hits something:</text>
+  <text x="380" y="283" font-size="12" fill="#1b1f2a">disableBody(true, true) - body off, inactive, hidden.</text>
+  <text x="380" y="299" font-size="12" fill="#1b1f2a">It stays in the pool, ready to be fired again.</text>
+
+  <path d="M280 125 L356 118" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M555 165 L555 211" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M358 262 L284 250" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="390" y="345" text-anchor="middle" font-size="13" fill="#e63946">No new objects while the game runs, and nothing for the garbage collector to clear up - just switches.</text>
+</svg>

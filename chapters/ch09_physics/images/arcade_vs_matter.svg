@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="330" fill="#ffffff"/>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">The same tilted crate, in each engine</text>
+
+  <text x="190" y="64" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">Arcade Physics</text>
+  
+  <!-- tilted picture -->
+  <g transform="translate(190 210) rotate(30)">
+    <rect x="-40" y="-40" width="80" height="80" fill="#d9a066" stroke="#8a5a2b" stroke-width="3"/>
+    <line x1="-40" y1="-40" x2="40" y2="40" stroke="#8a5a2b" stroke-width="3"/>
+    <line x1="40" y1="-40" x2="-40" y2="40" stroke="#8a5a2b" stroke-width="3"/>
+  </g>
+  <line x1="40" y1="253" x2="340" y2="253" stroke="#2a9d8f" stroke-width="6"/>
+  <!-- axis aligned body -->
+  <rect x="150" y="170" width="80" height="80" fill="none" stroke="#e63946" stroke-width="3" stroke-dasharray="6 4"/>
+  <text x="190" y="278" text-anchor="middle" font-size="13" fill="#1b1f2a">the picture turns - the body (red) does not:</text>
+  <text x="190" y="296" text-anchor="middle" font-size="13" fill="#1b1f2a">always an upright box, or a circle</text>
+  <text x="190" y="314" text-anchor="middle" font-size="13" fill="#1b1f2a">it cannot tip over, and its corners poke through</text>
+
+  <text x="570" y="64" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">Matter.js</text>
+  <line x1="420" y1="253" x2="720" y2="253" stroke="#2a9d8f" stroke-width="6"/>
+  <g transform="translate(570 197) rotate(30)">
+    <rect x="-40" y="-40" width="80" height="80" fill="#d9a066" stroke="#8a5a2b" stroke-width="3"/>
+    <line x1="-40" y1="-40" x2="40" y2="40" stroke="#8a5a2b" stroke-width="3"/>
+    <line x1="40" y1="-40" x2="-40" y2="40" stroke="#8a5a2b" stroke-width="3"/>
+    <rect x="-40" y="-40" width="80" height="80" fill="none" stroke="#e63946" stroke-width="3" stroke-dasharray="6 4"/>
+  </g>
+  <text x="570" y="278" text-anchor="middle" font-size="13" fill="#1b1f2a">the body turns with the picture: any angle,</text>
+  <text x="570" y="296" text-anchor="middle" font-size="13" fill="#1b1f2a">any convex shape - so it rests on its corner</text>
+  <text x="570" y="314" text-anchor="middle" font-size="13" fill="#1b1f2a">and topples over, as a real crate would</text>
+</svg>

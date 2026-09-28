@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="380" viewBox="0 0 780 380" font-family="Arial, Helvetica, sans-serif">
+<rect width="780" height="380" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+<text x="390" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">Model, scene and view</text>
+<rect x="20" y="50" width="220" height="270" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+<text x="130" y="76" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">MODEL - plain TypeScript</text>
+<text x="130" y="94" text-anchor="middle" font-size="12" fill="#1b1f2a">no Phaser: what the game IS</text>
+<rect x="540" y="50" width="220" height="270" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+<text x="650" y="76" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">VIEW - Phaser game objects</text>
+<text x="650" y="94" text-anchor="middle" font-size="12" fill="#1b1f2a">what the player SEES</text>
+<rect x="40" y="110" width="180" height="48" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="1.5"/><text x="130" y="131" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">Card</text><text x="130" y="148" text-anchor="middle" font-size="11" fill="#1b1f2a">suit, rank, value</text>
+<rect x="40" y="170" width="180" height="48" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="1.5"/><text x="130" y="191" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">Deck</text><text x="130" y="208" text-anchor="middle" font-size="11" fill="#1b1f2a">shuffle(), draw()</text>
+<rect x="40" y="230" width="180" height="48" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="1.5"/><text x="130" y="251" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">rules.ts</text><text x="130" y="268" text-anchor="middle" font-size="11" fill="#1b1f2a">judge(guess, current, next)</text>
+<rect x="560" y="110" width="180" height="48" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="1.5"/><text x="650" y="131" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">CardSprite</text><text x="650" y="148" text-anchor="middle" font-size="11" fill="#1b1f2a">showFace(), flipTo()</text>
+<rect x="560" y="170" width="180" height="48" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="1.5"/><text x="650" y="191" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">Button</text><text x="650" y="208" text-anchor="middle" font-size="11" fill="#1b1f2a">label, hover, onClick</text>
+<rect x="560" y="230" width="180" height="48" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="1.5"/><text x="650" y="251" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">HistoryRow</text><text x="650" y="268" text-anchor="middle" font-size="11" fill="#1b1f2a">addCard() - advanced</text>
+<rect x="300" y="120" width="180" height="140" rx="12" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+<text x="390" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b1f2a">GameScene</text>
+<text x="390" y="172" text-anchor="middle" font-size="12" fill="#1b1f2a">the go-between:</text>
+<text x="390" y="190" text-anchor="middle" font-size="12" fill="#1b1f2a">asks the model what</text>
+<text x="390" y="206" text-anchor="middle" font-size="12" fill="#1b1f2a">happened, then tells</text>
+<text x="390" y="222" text-anchor="middle" font-size="12" fill="#1b1f2a">the view what to show</text>
+<path d="M296 150 L224 190" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="262" y="150" text-anchor="middle" font-size="12" fill="#1b1f2a">draw()</text>
+<path d="M296 235 L224 252" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="260" y="266" text-anchor="middle" font-size="12" fill="#1b1f2a">judge()</text>
+<path d="M484 150 L556 134" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="511" y="120" text-anchor="middle" font-size="11" fill="#1b1f2a">flipTo(card)</text>
+<path d="M556 200 L484 215" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+<text x="511" y="238" text-anchor="middle" font-size="11" fill="#1b1f2a">onClick()</text>
+<text x="390" y="345" text-anchor="middle" font-size="13" fill="#1b1f2a">The model never calls the view, and the view never changes the model. Change how a card LOOKS without touching</text>
+<text x="390" y="364" text-anchor="middle" font-size="13" fill="#1b1f2a">the rules; change the RULES (aces high, say) without touching a single picture.</text>
+</svg>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lifecycle Logger</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>1</kbd>
+          <span>Pause DemoScene (still drawn)</span>
+          <kbd>2</kbd>
+          <span>Resume DemoScene</span>
+          <kbd>3</kbd>
+          <span>Sleep DemoScene (not drawn)</span>
+          <kbd>4</kbd>
+          <span>Wake DemoScene</span>
+          <kbd>5</kbd>
+          <span>Restart DemoScene</span>
+          <kbd>6</kbd>
+          <span>Stop DemoScene</span>
+          <kbd>7</kbd>
+          <span>Launch DemoScene (a new one if removed)</span>
+          <kbd>8</kbd>
+          <span>Remove DemoScene for good</span>
+          <kbd>L</kbd>
+          <span>Leak mode on/off</span>
+          <kbd>S</kbd>
+          <span>Skip super.preUpdate() on/off</span>
+          <kbd>C</kbd>
+          <span>Clear the log</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

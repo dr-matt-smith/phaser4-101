@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Physics Playground</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>Mouse</kbd>
+          <span>Click to drop a ball</span>
+          <kbd>C</kbd>
+          <span>Drop a crate at the pointer</span>
+          <kbd>G</kbd>
+          <span>Gravity: earth, jupiter, off, moon</span>
+          <kbd>B</kbd>
+          <span>Ball bounce: a little, super, perfect, dead</span>
+          <kbd>D</kbd>
+          <span>Drag: none, linear, damping</span>
+          <kbd>F</kbd>
+          <span>Moving platform friction: 1 or 0</span>
+          <kbd>T</kbd>
+          <span>Slow motion on / off</span>
+          <kbd>P</kbd>
+          <span>Pause / resume the physics</span>
+          <kbd>V</kbd>
+          <span>Show the physics bodies</span>
+          <kbd>R</kbd>
+          <span>Start again</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

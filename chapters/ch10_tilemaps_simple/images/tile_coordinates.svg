@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="760" height="380" viewBox="0 0 760 380" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker>
+    <marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker>
+    <image id="ts" width="128" height="32" style="image-rendering:pixelated" href="data:image/png;base64,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" xlink:href="data:image/png;base64,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"/>
+  </defs>
+  <text x="380" y="30" text-anchor="middle" font-size="18" fill="#1b1f2a" font-weight="bold">Pixels (world) and tiles (column, row)</text>
+  <rect x="80" y="80" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="136" y="80" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="192" y="80" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="248" y="80" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="304" y="80" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="360" y="80" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="80" y="136" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="136" y="136" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="192" y="136" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="248" y="136" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="304" y="136" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="360" y="136" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="80" y="192" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="136" y="192" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="192" y="192" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="248" y="192" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="304" y="192" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="360" y="192" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="80" y="248" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="136" y="248" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="192" y="248" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="248" y="248" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <rect x="304" y="248" width="56" height="56" fill="#e8f1ec" stroke="#457b9d" stroke-width="1"/>
+  <rect x="360" y="248" width="56" height="56" fill="#f1faee" stroke="#457b9d" stroke-width="1"/>
+  <text x="80" y="70" text-anchor="middle" font-size="11" fill="#457b9d">0</text>
+  <text x="136" y="70" text-anchor="middle" font-size="11" fill="#457b9d">32</text>
+  <text x="192" y="70" text-anchor="middle" font-size="11" fill="#457b9d">64</text>
+  <text x="248" y="70" text-anchor="middle" font-size="11" fill="#457b9d">96</text>
+  <text x="304" y="70" text-anchor="middle" font-size="11" fill="#457b9d">128</text>
+  <text x="360" y="70" text-anchor="middle" font-size="11" fill="#457b9d">160</text>
+  <text x="416" y="70" text-anchor="middle" font-size="11" fill="#457b9d">192</text>
+  <text x="70" y="84" text-anchor="end" font-size="11" fill="#457b9d">0</text>
+  <text x="70" y="140" text-anchor="end" font-size="11" fill="#457b9d">32</text>
+  <text x="70" y="196" text-anchor="end" font-size="11" fill="#457b9d">64</text>
+  <text x="70" y="252" text-anchor="end" font-size="11" fill="#457b9d">96</text>
+  <text x="70" y="308" text-anchor="end" font-size="11" fill="#457b9d">128</text>
+  <text x="108.0" y="324" text-anchor="middle" font-size="12" fill="#1d3557" font-weight="bold">col 0</text>
+  <text x="164.0" y="324" text-anchor="middle" font-size="12" fill="#1d3557" font-weight="bold">col 1</text>
+  <text x="220.0" y="324" text-anchor="middle" font-size="12" fill="#1d3557" font-weight="bold">col 2</text>
+  <text x="276.0" y="324" text-anchor="middle" font-size="12" fill="#1d3557" font-weight="bold">col 3</text>
+  <text x="332.0" y="324" text-anchor="middle" font-size="12" fill="#1d3557" font-weight="bold">col 4</text>
+  <text x="388.0" y="324" text-anchor="middle" font-size="12" fill="#1d3557" font-weight="bold">col 5</text>
+  <text x="426" y="112.0" text-anchor="start" font-size="12" fill="#1d3557" font-weight="bold">row 0</text>
+  <text x="426" y="168.0" text-anchor="start" font-size="12" fill="#1d3557" font-weight="bold">row 1</text>
+  <text x="426" y="224.0" text-anchor="start" font-size="12" fill="#1d3557" font-weight="bold">row 2</text>
+  <text x="426" y="280.0" text-anchor="start" font-size="12" fill="#1d3557" font-weight="bold">row 3</text>
+  <rect x="304" y="192" width="56" height="56" fill="#a8dadc" stroke="#1d3557" stroke-width="3"/>
+  <circle cx="342.5" cy="220.0" r="6" fill="#e63946"/>
+  <circle cx="304.0" cy="192.0" r="6" fill="#2a9d8f"/>
+  <text x="530" y="110" text-anchor="start" font-size="13" fill="#e63946" font-weight="bold">a point in the world:  (150, 80)</text>
+  <text x="530" y="132" text-anchor="start" font-size="12.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace">worldToTileXY(150, 80)</text>
+  <text x="530" y="150" text-anchor="start" font-size="12.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace">  -&gt; column 4, row 2</text>
+  <text x="530" y="168" text-anchor="start" font-size="12" fill="#1b1f2a">(150 / 32 = 4.7, 80 / 32 = 2.5,</text>
+  <text x="530" y="184" text-anchor="start" font-size="12" fill="#1b1f2a"> rounded down)</text>
+  <text x="530" y="222" text-anchor="start" font-size="13" fill="#2a9d8f" font-weight="bold">the tile's top left corner:</text>
+  <text x="530" y="244" text-anchor="start" font-size="12.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace">tileToWorldXY(4, 2)</text>
+  <text x="530" y="262" text-anchor="start" font-size="12.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace">  -&gt; (128, 64)</text>
+  <text x="530" y="284" text-anchor="start" font-size="12" fill="#1b1f2a">add half a tile (16) for</text>
+  <text x="530" y="300" text-anchor="start" font-size="12" fill="#1b1f2a">its centre: (144, 80)</text>
+  <text x="530" y="336" text-anchor="start" font-size="12.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace">getTileAtWorldXY(150, 80)</text>
+  <text x="530" y="354" text-anchor="start" font-size="12.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace">  -&gt; the Tile itself</text>
+</svg>

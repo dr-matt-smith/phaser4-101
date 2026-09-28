@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory Match</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>Mouse</kbd>
+          <span>Click a tile to turn it over</span>
+          <!-- CHALLENGE 1 -->
+          <kbd>1 2 3</kbd>
+          <span>New game: 4 x 3, 4 x 4 or 6 x 4</span>
+          <kbd>Space</kbd>
+          <span>Play again, when every pair is found</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

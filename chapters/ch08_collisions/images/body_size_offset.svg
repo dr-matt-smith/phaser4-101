@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="330" viewBox="0 0 720 330" font-family="Arial, Helvetica, sans-serif">
+  <rect width="720" height="330" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker></defs>
+  <text x="360" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">A body smaller than its picture (enemy.png, drawn 5 times full size)</text>
+
+  <!-- 48x48 picture at 5x = 240 -->
+  <rect x="60" y="60" width="240" height="240" fill="#f1faee" stroke="#457b9d" stroke-width="2" stroke-dasharray="6 4"/>
+  <polygon points="180,80 280,270 80,270" fill="#e63946" stroke="#7f1d24" stroke-width="6"/>
+  <!-- body: offset (12,18) size 24x24 at 5x: x 60+60=120, y 60+90=150, 120x120 -->
+  <rect x="120" y="150" width="120" height="120" fill="#ff00ff" fill-opacity="0.12" stroke="#ff00ff" stroke-width="3"/>
+  <path d="M60 52 L118 52" stroke="#e63946" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="89" y="46" text-anchor="middle" font-size="12" fill="#e63946">x 12</text>
+  <path d="M52 60 L52 148" stroke="#e63946" stroke-width="2" marker-start="url(#a)" marker-end="url(#a)"/>
+  <text x="46" y="108" text-anchor="end" font-size="12" fill="#e63946">y 18</text>
+
+  <text x="340" y="90" font-size="14" fill="#1b1f2a">dashed: the picture, 48 x 48</text>
+  <text x="340" y="115" font-size="14" fill="#1b1f2a">pink: the body - what the physics engine sees</text>
+  <text x="340" y="160" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1d3557">enemy.setSize(24, 24);</text>
+  <text x="340" y="182" font-family="Consolas, Menlo, monospace" font-size="14" fill="#1d3557">enemy.setOffset(12, 18);</text>
+  <text x="340" y="225" font-size="14" fill="#1b1f2a">setSize: the body's width and height</text>
+  <text x="340" y="247" font-size="14" fill="#1b1f2a">setOffset: where its top-left corner is,</text>
+  <text x="340" y="267" font-size="14" fill="#1b1f2a">measured from the picture's top-left corner</text>
+</svg>

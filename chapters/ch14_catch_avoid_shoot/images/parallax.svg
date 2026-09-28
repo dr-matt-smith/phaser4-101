@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="300" viewBox="0 0 780 300" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="300" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">A starfield in three layers - a picture and two TileSprites</text>
+
+  <g>
+    <rect x="30" y="60" width="180" height="135" fill="#1d1540" stroke="#1d3557" stroke-width="2"/>
+    <circle cx="70" cy="160" r="22" fill="#7a5ea8"/>
+    <text x="120" y="222" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">space.png</text>
+    <text x="120" y="240" text-anchor="middle" font-size="12" fill="#1b1f2a">an Image: does not move</text>
+  </g>
+  <text x="240" y="132" text-anchor="middle" font-size="24" fill="#1d3557">+</text>
+  <g>
+    <rect x="270" y="60" width="180" height="135" fill="#ffffff" stroke="#457b9d" stroke-width="2" stroke-dasharray="5 4"/>
+    <g fill="#457b9d"><circle cx="290" cy="75" r="1.5"/><circle cx="320" cy="110" r="1.5"/><circle cx="350" cy="80" r="1.5"/><circle cx="380" cy="150" r="1.5"/><circle cx="420" cy="95" r="1.5"/><circle cx="300" cy="170" r="1.5"/><circle cx="360" cy="130" r="1.5"/><circle cx="435" cy="180" r="1.5"/><circle cx="400" cy="65" r="1.5"/><circle cx="330" cy="185" r="1.5"/></g>
+    <path d="M460 90 L460 170" stroke="#2a9d8f" stroke-width="2" marker-end="url(#a)"/>
+    <text x="360" y="222" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">far stars</text>
+    <text x="360" y="240" text-anchor="middle" font-size="12" fill="#1b1f2a">small, dim: 30 pixels per second</text>
+  </g>
+  <text x="490" y="132" text-anchor="middle" font-size="24" fill="#1d3557">+</text>
+  <g>
+    <rect x="520" y="60" width="180" height="135" fill="#ffffff" stroke="#457b9d" stroke-width="2" stroke-dasharray="5 4"/>
+    <g fill="#1d3557"><circle cx="550" cy="90" r="3.5"/><circle cx="640" cy="75" r="3.5"/><circle cx="600" cy="150" r="3.5"/><circle cx="680" cy="170" r="3.5"/></g>
+    <path d="M710 70 L710 190" stroke="#2a9d8f" stroke-width="3" marker-end="url(#a)"/>
+    <text x="610" y="222" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d3557">near stars</text>
+    <text x="610" y="240" text-anchor="middle" font-size="12" fill="#1b1f2a">bigger, brighter: 90 pixels per second</text>
+  </g>
+  <text x="390" y="280" text-anchor="middle" font-size="13" fill="#e63946">Each TileSprite repeats a 256 x 256 star picture; changing tilePositionY slides the picture inside it.</text>
+</svg>

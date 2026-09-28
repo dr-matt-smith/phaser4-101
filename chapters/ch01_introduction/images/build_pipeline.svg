@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="330" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="380" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">deno task build  -  from your code to a page a browser can run</text>
+  <!-- sources -->
+  <rect x="20" y="55" width="200" height="150" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="120" y="80" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">src/</text>
+  <text x="40" y="106" font-size="13" fill="#1b1f2a">main.ts</text>
+  <text x="40" y="128" font-size="13" fill="#1b1f2a">scenes/GameScene.ts</text>
+  <text x="40" y="150" font-size="13" fill="#1b1f2a">objects/Ball.ts</text>
+  <text x="40" y="172" font-size="13" fill="#1b1f2a">...  (TypeScript)</text>
+  <rect x="20" y="225" width="200" height="80" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="120" y="250" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">public/</text>
+  <text x="40" y="275" font-size="13" fill="#1b1f2a">index.html, styles.css, assets/</text>
+  <!-- steps -->
+  <rect x="270" y="55" width="200" height="60" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="370" y="80" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">1. deno check</text>
+  <text x="370" y="100" text-anchor="middle" font-size="12" fill="#1b1f2a">finds type errors</text>
+  <rect x="270" y="140" width="200" height="65" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="370" y="164" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">2. deno bundle</text>
+  <text x="370" y="184" text-anchor="middle" font-size="12" fill="#1b1f2a">strips the types, joins every</text>
+  <text x="370" y="198" text-anchor="middle" font-size="12" fill="#1b1f2a">file + Phaser into one script</text>
+  <rect x="270" y="240" width="200" height="50" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="370" y="270" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">3. copy as-is</text>
+  <!-- dist -->
+  <rect x="520" y="100" width="220" height="175" rx="10" fill="#fff3e6" stroke="#f4a261" stroke-width="2"/>
+  <text x="630" y="125" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">dist/</text>
+  <text x="540" y="152" font-size="13" fill="#1b1f2a">game.js  (JavaScript, ~6 MB)</text>
+  <text x="540" y="174" font-size="13" fill="#1b1f2a">index.html, styles.css</text>
+  <text x="540" y="196" font-size="13" fill="#1b1f2a">assets/</text>
+  <text x="540" y="222" font-size="12" fill="#1d3557">4. anything no longer in public/</text>
+  <text x="540" y="237" font-size="12" fill="#1d3557">    is tidied away</text>
+  <text x="630" y="262" text-anchor="middle" font-size="12" fill="#e63946">deno task serve  ->  :8000</text>
+  <path d="M220 90 L268 88" stroke="#1d3557" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M220 150 L268 168" stroke="#1d3557" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M220 265 L268 265" stroke="#1d3557" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M470 172 L518 165" stroke="#1d3557" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M470 265 L518 220" stroke="#1d3557" stroke-width="2" fill="none" marker-end="url(#a)"/>
+</svg>

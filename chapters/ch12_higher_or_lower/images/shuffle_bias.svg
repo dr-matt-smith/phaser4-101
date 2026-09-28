@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360" font-family="Arial, Helvetica, sans-serif">
+<rect width="760" height="360" fill="#ffffff"/>
+<text x="380" y="26" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">Shuffling [A, B, C] 600,000 times: how often each order came out</text>
+<rect x="200" y="42" width="14" height="14" rx="2" fill="#e63946"/><text x="220" y="54" font-size="13" fill="#1b1f2a">sort(() =&gt; Math.random() - 0.5)</text>
+<rect x="440" y="42" width="14" height="14" rx="2" fill="#2a9d8f"/><text x="460" y="54" font-size="13" fill="#1b1f2a">Fisher-Yates</text>
+<line x1="70" y1="280.0" x2="650" y2="280.0" stroke="#d9dee7" stroke-width="1"/>
+<text x="62" y="284.0" text-anchor="end" font-size="12" fill="#5a6070">0%</text>
+<line x1="70" y1="213.3" x2="650" y2="213.3" stroke="#d9dee7" stroke-width="1"/>
+<text x="62" y="217.3" text-anchor="end" font-size="12" fill="#5a6070">10%</text>
+<line x1="70" y1="146.7" x2="650" y2="146.7" stroke="#d9dee7" stroke-width="1"/>
+<text x="62" y="150.7" text-anchor="end" font-size="12" fill="#5a6070">20%</text>
+<line x1="70" y1="80.0" x2="650" y2="80.0" stroke="#d9dee7" stroke-width="1"/>
+<text x="62" y="84.0" text-anchor="end" font-size="12" fill="#5a6070">30%</text>
+<path d="M83 280 V117.3 Q83 113.3 87 113.3 H114 Q118 113.3 118 117.3 V280 Z" fill="#e63946"/>
+<text x="100.5" y="107.3" text-anchor="middle" font-size="11" fill="#1b1f2a">25.0</text>
+<path d="M122 280 V172.7 Q122 168.7 126 168.7 H153 Q157 168.7 157 172.7 V280 Z" fill="#2a9d8f"/>
+<text x="139.5" y="162.7" text-anchor="middle" font-size="11" fill="#1b1f2a">16.7</text>
+<text x="120" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">A B C</text>
+<path d="M178 280 V200.7 Q178 196.7 182 196.7 H209 Q213 196.7 213 200.7 V280 Z" fill="#e63946"/>
+<text x="195.5" y="190.7" text-anchor="middle" font-size="11" fill="#1b1f2a">12.5</text>
+<path d="M217 280 V172.7 Q217 168.7 221 168.7 H248 Q252 168.7 252 172.7 V280 Z" fill="#2a9d8f"/>
+<text x="234.5" y="162.7" text-anchor="middle" font-size="11" fill="#1b1f2a">16.7</text>
+<text x="215" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">A C B</text>
+<path d="M273 280 V116.7 Q273 112.7 277 112.7 H304 Q308 112.7 308 116.7 V280 Z" fill="#e63946"/>
+<text x="290.5" y="106.7" text-anchor="middle" font-size="11" fill="#1b1f2a">25.1</text>
+<path d="M312 280 V172.7 Q312 168.7 316 168.7 H343 Q347 168.7 347 172.7 V280 Z" fill="#2a9d8f"/>
+<text x="329.5" y="162.7" text-anchor="middle" font-size="11" fill="#1b1f2a">16.7</text>
+<text x="310" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">B A C</text>
+<path d="M368 280 V200.7 Q368 196.7 372 196.7 H399 Q403 196.7 403 200.7 V280 Z" fill="#e63946"/>
+<text x="385.5" y="190.7" text-anchor="middle" font-size="11" fill="#1b1f2a">12.5</text>
+<path d="M407 280 V173.3 Q407 169.3 411 169.3 H438 Q442 169.3 442 173.3 V280 Z" fill="#2a9d8f"/>
+<text x="424.5" y="163.3" text-anchor="middle" font-size="11" fill="#1b1f2a">16.6</text>
+<text x="405" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">B C A</text>
+<path d="M463 280 V201.3 Q463 197.3 467 197.3 H494 Q498 197.3 498 201.3 V280 Z" fill="#e63946"/>
+<text x="480.5" y="191.3" text-anchor="middle" font-size="11" fill="#1b1f2a">12.4</text>
+<path d="M502 280 V172.7 Q502 168.7 506 168.7 H533 Q537 168.7 537 172.7 V280 Z" fill="#2a9d8f"/>
+<text x="519.5" y="162.7" text-anchor="middle" font-size="11" fill="#1b1f2a">16.7</text>
+<text x="500" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">C A B</text>
+<path d="M558 280 V200.7 Q558 196.7 562 196.7 H589 Q593 196.7 593 200.7 V280 Z" fill="#e63946"/>
+<text x="575.5" y="190.7" text-anchor="middle" font-size="11" fill="#1b1f2a">12.5</text>
+<path d="M597 280 V173.3 Q597 169.3 601 169.3 H628 Q632 169.3 632 173.3 V280 Z" fill="#2a9d8f"/>
+<text x="614.5" y="163.3" text-anchor="middle" font-size="11" fill="#1b1f2a">16.6</text>
+<text x="595" y="300" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">C B A</text>
+<line x1="70" y1="168.9" x2="650" y2="168.9" stroke="#1d3557" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="658" y="164.9" font-size="12" fill="#1d3557">fair: 1 in 6</text><text x="658" y="180.9" font-size="12" fill="#1d3557">= 16.7%</text>
+<line x1="70" y1="280" x2="650" y2="280" stroke="#1b1f2a" stroke-width="1"/>
+<text x="380" y="330" text-anchor="middle" font-size="13" fill="#1b1f2a">With the sort trick, A B C (no change at all) and B A C turn up twice as often as the other four orders.</text>
+<text x="380" y="350" text-anchor="middle" font-size="13" fill="#1b1f2a">Measured in Deno, whose JavaScript engine (V8) is the one inside Chrome.</text>
+</svg>

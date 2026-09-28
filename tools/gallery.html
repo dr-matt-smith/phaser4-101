@@ -1,0 +1,18 @@
+<!DOCTYPE html><html><body style="margin:0;background:#888">
+<canvas id="c" width="1400" height="2400"></canvas>
+<script>
+// A contact sheet of every image in assets/ - open via a web server at /tools/gallery.html
+const files = ["images/arena.png","images/arrow_left.png","images/arrow_right.png","images/ball.png","images/ball_blue.png","images/ball_small.png","images/basket.png","images/bomb.png","images/bullet.png","images/button.png","images/button_down.png","images/button_over.png","images/cloud.png","images/coin.png","images/crate.png","images/enemy.png","images/enemy_bullet.png","images/enemy_ship.png","images/fruit.png","images/gem.png","images/ground.png","images/heart.png","images/logo.png","images/panel.png","images/particle.png","images/platform.png","images/player.png","images/player_ship.png","images/rock.png","images/sky.png","images/sound_off.png","images/sound_on.png","images/space.png","images/star.png","images/table.png","images/target.png","spritesheets/bat.png","spritesheets/cards.png","spritesheets/coin_spin.png","spritesheets/explosion.png","spritesheets/fighter_blue.png","spritesheets/fighter_red.png","spritesheets/ghost.png","spritesheets/hero.png","spritesheets/items.png","spritesheets/memory_tiles.png","spritesheets/slime.png","spritesheets/topdown_enemy.png","spritesheets/topdown_hero.png","tilesets/dungeon_tiles.png","tilesets/platform_tiles.png","tilesets/simple_tiles.png",];
+const c = document.getElementById("c"), g = c.getContext("2d");
+let x = 10, y = 10, rowH = 0;
+(async () => {
+  for (const f of files) {
+    const img = new Image(); img.src = "../assets/" + f; await img.decode();
+    let w = img.width, h = img.height, s = Math.min(1, 1380 / w, 260 / h); w *= s; h *= s;
+    if (x + w > 1390) { x = 10; y += rowH + 22; rowH = 0; }
+    g.drawImage(img, x, y, w, h); g.fillStyle = "#000"; g.font = "11px Arial"; g.fillText(f.replace("images/","").replace("spritesheets/","ss/").replace("tilesets/","ts/"), x, y + h + 12);
+    x += Math.max(w, 90) + 12; rowH = Math.max(rowH, h);
+  }
+  window.galleryDone = true;
+})();
+</script></body></html>

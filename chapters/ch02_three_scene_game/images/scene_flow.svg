@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="320" viewBox="0 0 760 320" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="320" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">Three scenes, and what moves the game from one to the next</text>
+  <rect x="30" y="100" width="170" height="90" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2.5"/>
+  <text x="115" y="135" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d3557">StartScene</text>
+  <text x="115" y="158" text-anchor="middle" font-size="12" fill="#1b1f2a">first in the config list,</text>
+  <text x="115" y="174" text-anchor="middle" font-size="12" fill="#1b1f2a">so Phaser starts it</text>
+  <rect x="295" y="100" width="170" height="90" rx="12" fill="#a8dadc" stroke="#1d3557" stroke-width="2.5"/>
+  <text x="380" y="135" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d3557">PlayScene</text>
+  <text x="380" y="158" text-anchor="middle" font-size="12" fill="#1b1f2a">the bouncing ball,</text>
+  <text x="380" y="174" text-anchor="middle" font-size="12" fill="#1b1f2a">and the clock</text>
+  <rect x="560" y="100" width="170" height="90" rx="12" fill="#fff3e6" stroke="#f4a261" stroke-width="2.5"/>
+  <text x="645" y="135" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d3557">WinScene</text>
+  <text x="645" y="158" text-anchor="middle" font-size="12" fill="#1b1f2a">init(data) receives</text>
+  <text x="645" y="174" text-anchor="middle" font-size="12" fill="#1b1f2a">the time</text>
+  <path d="M200 135 L291 135" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="247" y="125" text-anchor="middle" font-size="13" fill="#e63946">SPACE</text>
+  <path d="M465 135 L556 135" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="510" y="118" text-anchor="middle" font-size="13" fill="#e63946">click ball</text>
+  <text x="510" y="92" text-anchor="middle" font-size="12" fill="#2a9d8f">{ seconds: 2.34 }</text>
+  <path d="M645 190 C645 260 380 260 380 194" stroke="#1d3557" stroke-width="2.5" fill="none" marker-end="url(#a)"/>
+  <text x="512" y="274" text-anchor="middle" font-size="13" fill="#e63946">SPACE - play again</text>
+  <text x="380" y="306" text-anchor="middle" font-size="13" fill="#1b1f2a">each arrow is  this.scene.start(KEY, data?)  - stop this scene, start that one</text>
+</svg>

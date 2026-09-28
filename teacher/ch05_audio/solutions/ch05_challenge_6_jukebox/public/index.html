@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sound Board</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>1 - 8</kbd>
+          <span>Play a pad (or click it)</span>
+          <kbd>&uarr; &darr;</kbd>
+          <span>Volume</span>
+          <kbd>&larr; &rarr;</kbd>
+          <span>Rate (speed)</span>
+          <kbd>W S</kbd>
+          <span>Detune (pitch)</span>
+          <kbd>R</kbd>
+          <span>Random pitch on / off</span>
+          <kbd>P</kbd>
+          <span>Pan by position on / off</span>
+          <kbd>E</kbd>
+          <span>Echo on / off</span>
+          <kbd>Z</kbd>
+          <span>Reset the settings</span>
+          <kbd>M</kbd>
+          <span>Music: play / pause / carry on</span>
+          <kbd>N</kbd>
+          <span>Music: stop</span>
+          <!-- CHALLENGE 6 -->
+          <kbd>K</kbd>
+          <span>Music: next track</span>
+          <kbd>L</kbd>
+          <span>Music: loop on / off</span>
+          <kbd>J</kbd>
+          <span>Music: skip 2 seconds</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

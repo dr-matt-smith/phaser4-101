@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="510" viewBox="0 0 800 510" font-family="Arial, Helvetica, sans-serif">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker>
+<marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker>
+
+</defs>
+<rect width="800" height="510" fill="#ffffff"/>
+<rect x="20" y="16" width="250" height="250" rx="6" fill="#ffffff" stroke="#1d3557" stroke-width="2"/>
+<rect x="20" y="16" width="250" height="22" rx="6" fill="#1d3557"/><rect x="20" y="28" width="250" height="10" fill="#1d3557"/>
+<text x="28" y="32" font-size="12" fill="#ffffff" font-weight="bold">level1.tmj - the map</text>
+<text x="30" y="56" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"type": "map",</text>
+<text x="30" y="72" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"orientation": "orthogonal",</text>
+<text x="30" y="88" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"width": 64,  "height": 20,</text>
+<text x="30" y="104" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"tilewidth": 32,</text>
+<text x="30" y="120" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"tileheight": 32,</text>
+<text x="30" y="136" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"infinite": false,</text>
+<text x="30" y="152" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"properties": [ ... ],</text>
+<text x="30" y="168" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"tilesets": [ ... ],</text>
+<text x="30" y="184" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"layers": [ ... ],</text>
+<text x="30" y="200" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"nextlayerid": 4,</text>
+<text x="30" y="216" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"nextobjectid": 21,</text>
+<text x="30" y="232" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"version": "1.10"</text>
+<rect x="290" y="16" width="500" height="146" rx="6" fill="#ffffff" stroke="#2a9d8f" stroke-width="2"/>
+<rect x="290" y="16" width="500" height="22" rx="6" fill="#2a9d8f"/><rect x="290" y="28" width="500" height="10" fill="#2a9d8f"/>
+<text x="298" y="32" font-size="12" fill="#ffffff" font-weight="bold">tilesets[0] - embedded in the map</text>
+<text x="300" y="56" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"name": "platform_tiles",       &lt;- addTilesetImage("platform_tiles", ...)</text>
+<text x="300" y="72" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"firstgid": 1,</text>
+<text x="300" y="88" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"image": "../tilesets/platform_tiles.png",</text>
+<text x="300" y="104" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"columns": 8,  "tilecount": 16,  "tilewidth": 32, ...</text>
+<text x="300" y="120" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"tiles": [ { "id": 0, "properties": [</text>
+<text x="300" y="136" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">    { "name": "collides", "type": "bool", "value": true } ] }, ... ]</text>
+<rect x="290" y="176" width="500" height="114" rx="6" fill="#ffffff" stroke="#457b9d" stroke-width="2"/>
+<rect x="290" y="176" width="500" height="22" rx="6" fill="#457b9d"/><rect x="290" y="188" width="500" height="10" fill="#457b9d"/>
+<text x="298" y="192" font-size="12" fill="#ffffff" font-weight="bold">layers[0] and [1] - tile layers</text>
+<text x="300" y="216" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"name": "Ground",  "type": "tilelayer",    &lt;- createLayer("Ground", ...)</text>
+<text x="300" y="232" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"width": 64,  "height": 20,</text>
+<text x="300" y="248" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"data": [ 0, 0, 0, ...                   one GID per tile, row by row:</text>
+<text x="300" y="264" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">          1, 1, 1, 1, 4, 0, 0, 0, 3, ... ]  64 x 20 = 1280 numbers</text>
+<rect x="290" y="304" width="500" height="194" rx="6" fill="#ffffff" stroke="#e63946" stroke-width="2"/>
+<rect x="290" y="304" width="500" height="22" rx="6" fill="#e63946"/><rect x="290" y="316" width="500" height="10" fill="#e63946"/>
+<text x="298" y="320" font-size="12" fill="#ffffff" font-weight="bold">layers[2] - the object layer</text>
+<text x="300" y="344" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"name": "Objects",  "type": "objectgroup",  &lt;- getObjectLayer("Objects")</text>
+<text x="300" y="360" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">"objects": [</text>
+<text x="300" y="376" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">  { "id": 1, "name": "player", "point": true, "x": 64, "y": 520, ... },</text>
+<text x="300" y="392" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">  { "id": 2, "name": "coin", "point": true, "x": 208, "y": 432, ... },</text>
+<text x="300" y="408" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">  { "id": 18, "name": "enemy", "point": true, "x": 1232, "y": 528,</text>
+<text x="300" y="424" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">    "properties": [ { "name": "speed", "type": "float", "value": 60 } ] },</text>
+<text x="300" y="440" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">  { "id": 20, "name": "goal", "x": 1952, "y": 480,</text>
+<text x="300" y="456" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">    "width": 32, "height": 64, ... }</text>
+<text x="300" y="472" font-size="10.5" fill="#1b1f2a" font-family="Menlo, Consolas, monospace" xml:space="preserve">]</text>
+<line x1="270" y1="150" x2="288" y2="90" stroke="#1d3557" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="270" y1="166" x2="288" y2="232" stroke="#1d3557" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="270" y1="166" x2="288" y2="380" stroke="#1d3557" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="20" y="292" font-size="12" fill="#457b9d">Keys are written in alphabetical order;</text>
+<text x="20" y="308" font-size="12" fill="#457b9d">"..." marks what has been left out here.</text>
+<text x="20" y="340" font-size="12" fill="#1b1f2a">Phaser reads all of it with</text>
+<text x="20" y="358" font-size="12" fill="#1d3557" font-family="Menlo, Consolas, monospace" xml:space="preserve">this.load.tilemapTiledJSON(key, file)</text>
+<text x="20" y="376" font-size="12" fill="#1b1f2a">and builds the map with</text>
+<text x="20" y="394" font-size="12" fill="#1d3557" font-family="Menlo, Consolas, monospace" xml:space="preserve">this.make.tilemap({ key })</text>
+</svg>

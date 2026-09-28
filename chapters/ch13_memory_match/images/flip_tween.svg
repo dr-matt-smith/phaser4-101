@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Arial, Helvetica, sans-serif">
+<rect width="760" height="300" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+<text x="380" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">A flip is two tweens of scaleX, with the frame swapped in between</text>
+<rect x="45.0" y="60" width="90" height="90" rx="8" fill="#3a0ca3" stroke="#1b1f2a" stroke-width="2"/>
+<text x="90" y="119.0" text-anchor="middle" font-size="44" font-weight="bold" fill="#f72585" transform="translate(90 0) scale(1 1) translate(-90 0)">?</text>
+<text x="90" y="172" text-anchor="middle" font-size="13" font-family="Courier New, monospace" font-weight="bold" fill="#1d3557">scaleX 1</text>
+<rect x="207.5" y="60" width="45.0" height="90" rx="8" fill="#3a0ca3" stroke="#1b1f2a" stroke-width="2"/>
+<text x="230" y="119.0" text-anchor="middle" font-size="44" font-weight="bold" fill="#f72585" transform="translate(230 0) scale(0.5 1) translate(-230 0)">?</text>
+<text x="230" y="172" text-anchor="middle" font-size="13" font-family="Courier New, monospace" font-weight="bold" fill="#1d3557">scaleX 0.5</text>
+<rect x="378.5" y="60" width="3" height="90" fill="#1d3557"/>
+<text x="380" y="172" text-anchor="middle" font-size="13" font-family="Courier New, monospace" font-weight="bold" fill="#1d3557">scaleX 0</text>
+<rect x="507.5" y="60" width="45.0" height="90" rx="8" fill="#f8f9fa" stroke="#adb5bd" stroke-width="2"/>
+<ellipse cx="530" cy="105.0" rx="13.0" ry="26" fill="#e63946" stroke="#9d0208" stroke-width="2"/>
+<text x="530" y="172" text-anchor="middle" font-size="13" font-family="Courier New, monospace" font-weight="bold" fill="#1d3557">scaleX 0.5</text>
+<rect x="625.0" y="60" width="90" height="90" rx="8" fill="#f8f9fa" stroke="#adb5bd" stroke-width="2"/>
+<ellipse cx="670" cy="105.0" rx="26" ry="26" fill="#e63946" stroke="#9d0208" stroke-width="2"/>
+<text x="670" y="172" text-anchor="middle" font-size="13" font-family="Courier New, monospace" font-weight="bold" fill="#1d3557">scaleX 1</text>
+<text x="90" y="190" text-anchor="middle" font-size="12" fill="#1b1f2a">frame 0: the back</text>
+<text x="380" y="190" text-anchor="middle" font-size="12" fill="#e63946">setFrame(face)</text>
+<text x="380" y="205" text-anchor="middle" font-size="12" fill="#e63946">- nobody can see it happen</text>
+<text x="670" y="190" text-anchor="middle" font-size="12" fill="#1b1f2a">frame 1: a face</text>
+<path d="M90 235 L372 235" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M388 235 L670 235" stroke="#1d3557" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="235.0" y="227" text-anchor="middle" font-size="13" fill="#1d3557">tween 1: scaleX to 0, 120 ms, "Sine.easeIn"</text>
+<text x="525.0" y="227" text-anchor="middle" font-size="13" fill="#1d3557">tween 2: scaleX to 1, 120 ms, "Sine.easeOut"</text>
+<text x="235.0" y="257" text-anchor="middle" font-size="12" fill="#2a9d8f">its onComplete swaps the frame,</text>
+<text x="235.0" y="272" text-anchor="middle" font-size="12" fill="#2a9d8f">then starts tween 2</text>
+<text x="525.0" y="257" text-anchor="middle" font-size="12" fill="#2a9d8f">its onComplete calls onDone(), if there is one:</text>
+<text x="525.0" y="272" text-anchor="middle" font-size="12" fill="#2a9d8f">"the flip has finished"</text>
+</svg>

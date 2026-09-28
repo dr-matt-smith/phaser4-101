@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Platformer (intermediate)</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>Space</kbd>
+          <span>Start; play again</span>
+          <kbd>&larr; &rarr;</kbd>
+          <span>Run</span>
+          <kbd>&uarr; or Space</kbd>
+          <span>Jump - hold for a higher jump</span>
+          <kbd>&larr; / &rarr; into a wall</kbd> <!-- CHALLENGE 4 -->
+          <span>In the air: slide down it, then jump off it</span>
+          <kbd>Esc</kbd>
+          <span>Title screen (from the end screen)</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Memory Match Deluxe</title>
+  </head>
+  <body>
+    <main>
+      <!-- Phaser creates the game's <canvas> inside this div -->
+      <div id="game"></div>
+
+      <section class="controls">
+        <h3>Controls</h3>
+        <div class="control-grid">
+          <kbd>Mouse</kbd>
+          <span>Menu buttons; turn over tiles</span>
+          <!-- CHALLENGE 6 -->
+          <kbd>Arrows</kbd>
+          <span>Move the cursor round the board</span>
+          <kbd>Space / Enter</kbd>
+          <span>Turn over the tile under the cursor</span>
+          <kbd>P</kbd>
+          <span>Peek at every tile (once per level)</span>
+          <kbd>Esc</kbd>
+          <span>Back to the menu</span>
+        </div>
+      </section>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

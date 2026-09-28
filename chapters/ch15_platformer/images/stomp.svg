@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360" font-family="Arial, Helvetica, sans-serif">
+  <rect width="800" height="360" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1b1f2a">Stomp, or be hurt? The overlap callback decides</text>
+
+  <!-- left panel: stomp -->
+  <text x="200" y="66" text-anchor="middle" font-size="17" font-weight="bold" fill="#2a9d8f">STOMP</text>
+  <rect x="170" y="100" width="36" height="84" rx="6" fill="#457b9d" opacity="0.85"/>
+  <text x="188" y="146" text-anchor="middle" font-size="13" fill="#ffffff">hero</text>
+  <line x1="230" y1="110" x2="230" y2="170" stroke="#1b1f2a" stroke-width="2.5"/>
+  <polygon points="230,182 223,166 237,166" fill="#1b1f2a"/>
+  <text x="240" y="140" font-size="13" fill="#1b1f2a">falling:</text>
+  <text x="240" y="156" font-size="13" fill="#1b1f2a">velocity.y &gt; 0</text>
+  <rect x="150" y="176" width="100" height="24" fill="#f4a261" opacity="0.35"/>
+  <rect x="152" y="176" width="96" height="60" rx="18" fill="#2a9d8f"/>
+  <text x="200" y="215" text-anchor="middle" font-size="13" fill="#ffffff">slime</text>
+  <line x1="120" y1="176" x2="152" y2="176" stroke="#1b1f2a" stroke-width="1.5"/>
+  <text x="116" y="174" text-anchor="end" font-size="13" fill="#1b1f2a">enemy</text>
+  <text x="116" y="189" text-anchor="end" font-size="13" fill="#1b1f2a">body.top</text>
+  <line x1="250" y1="188" x2="290" y2="200" stroke="#f4a261" stroke-width="1.5"/>
+  <text x="294" y="206" font-size="13" fill="#1b1f2a">+ STOMP_MARGIN</text>
+  <line x1="40" y1="236" x2="360" y2="236" stroke="#2a9d8f" stroke-width="4"/>
+  <text x="200" y="272" text-anchor="middle" font-size="14" fill="#1b1f2a">feet no lower than the margin, and moving down:</text>
+  <text x="200" y="292" text-anchor="middle" font-size="14" fill="#1b1f2a">the enemy is squashed, and the hero bounces</text>
+
+  <line x1="400" y1="60" x2="400" y2="300" stroke="#a8dadc" stroke-width="2"/>
+
+  <!-- right panel: hurt -->
+  <text x="600" y="66" text-anchor="middle" font-size="17" font-weight="bold" fill="#e63946">HURT</text>
+  <rect x="500" y="152" width="36" height="84" rx="6" fill="#457b9d" opacity="0.85"/>
+  <text x="518" y="198" text-anchor="middle" font-size="13" fill="#ffffff">hero</text>
+  <line x1="470" y1="194" x2="494" y2="194" stroke="#1b1f2a" stroke-width="2.5"/>
+  <polygon points="506,194 490,187 490,201" fill="#1b1f2a"/>
+  <rect x="534" y="176" width="96" height="60" rx="18" fill="#2a9d8f"/>
+  <text x="582" y="215" text-anchor="middle" font-size="13" fill="#ffffff">slime</text>
+  <circle cx="535" cy="205" r="14" fill="none" stroke="#e63946" stroke-width="3"/>
+  <line x1="440" y1="236" x2="760" y2="236" stroke="#2a9d8f" stroke-width="4"/>
+  <text x="600" y="272" text-anchor="middle" font-size="14" fill="#1b1f2a">any other touch - from the side, from below,</text>
+  <text x="600" y="292" text-anchor="middle" font-size="14" fill="#1b1f2a">or while going up - hurts the hero</text>
+
+  <text x="400" y="336" text-anchor="middle" font-size="14" font-family="Courier New, monospace" fill="#1d3557">falling &amp;&amp; hero.body.bottom &lt;= enemy.body.top + STOMP_MARGIN</text>
+</svg>

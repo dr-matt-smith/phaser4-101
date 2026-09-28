@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="290" viewBox="0 0 780 290" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="290" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="390" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">Saving and loading the high score table</text>
+
+  <text x="20" y="72" font-size="14" font-weight="bold" fill="#2a9d8f">save()</text>
+  <rect x="20" y="82" width="150" height="56" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="95" y="106" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">HighScore[]</text>
+  <text x="95" y="124" text-anchor="middle" font-size="11" fill="#1b1f2a">objects in memory</text>
+  <path d="M170 110 L236 110" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="203" y="100" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">JSON.</text>
+  <text x="203" y="128" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">stringify</text>
+  <rect x="240" y="82" width="300" height="56" rx="8" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="390" y="106" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">'[{"initials":"MAT","score":1240,</text>
+  <text x="390" y="122" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">"level":4}, ...]'   (a string)</text>
+  <path d="M540 110 L606 110" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="573" y="100" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">setItem</text>
+  <rect x="610" y="72" width="150" height="150" rx="8" fill="#1d3557"/>
+  <text x="685" y="140" text-anchor="middle" font-size="14" font-weight="bold" fill="#f1faee">localStorage</text>
+  <text x="685" y="160" text-anchor="middle" font-size="11" fill="#f1faee">strings, by key,</text>
+  <text x="685" y="175" text-anchor="middle" font-size="11" fill="#f1faee">kept by the browser</text>
+
+  <text x="20" y="172" font-size="14" font-weight="bold" fill="#e63946">load()</text>
+  <path d="M606 206 L540 206" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="573" y="196" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">getItem</text>
+  <rect x="420" y="190" width="116" height="36" rx="8" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="478" y="212" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">string | null</text>
+  <path d="M420 208 L376 208" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="398" y="244" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">JSON.parse</text>
+  <text x="398" y="257" text-anchor="middle" font-size="10" fill="#e63946">(try / catch)</text>
+  <rect x="280" y="190" width="92" height="36" rx="8" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+  <text x="326" y="212" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">unknown</text>
+  <path d="M280 208 L176 208" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="228" y="244" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">filter(isHighScore)</text>
+  <text x="228" y="257" text-anchor="middle" font-size="10" fill="#e63946">check every entry</text>
+  <rect x="20" y="182" width="150" height="52" rx="8" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="95" y="206" text-anchor="middle" font-size="13" font-weight="bold" fill="#1b1f2a">HighScore[]</text>
+  <text x="95" y="224" text-anchor="middle" font-size="11" fill="#1b1f2a">safe to use</text>
+  <text x="390" y="282" text-anchor="middle" font-size="12" fill="#1b1f2a">What comes back might be anything: missing, not JSON, or JSON of the wrong shape.</text>
+</svg>

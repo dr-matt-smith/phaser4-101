@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="260" viewBox="0 0 720 260" font-family="Arial, Helvetica, sans-serif">
+  <rect width="720" height="260" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="360" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">A sound object's three states</text>
+
+  <rect x="40" y="95" width="150" height="64" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="115" y="124" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">stopped</text>
+  <text x="115" y="144" text-anchor="middle" font-size="12" fill="#1b1f2a">seek is 0</text>
+
+  <rect x="285" y="95" width="150" height="64" rx="12" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="360" y="124" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">playing</text>
+  <text x="360" y="144" text-anchor="middle" font-size="12" fill="#1b1f2a">isPlaying is true</text>
+
+  <rect x="530" y="95" width="150" height="64" rx="12" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+  <text x="605" y="124" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">paused</text>
+  <text x="605" y="144" text-anchor="middle" font-size="12" fill="#1b1f2a">isPaused is true</text>
+
+  <path d="M190 110 L281 110" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="235" y="102" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d3557">play()</text>
+  <path d="M285 146 L194 146" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="238" y="172" text-anchor="middle" font-size="12" fill="#1d3557">stop(), or the end</text>
+  <text x="238" y="187" text-anchor="middle" font-size="12" fill="#1d3557">(if not looping)</text>
+
+  <path d="M435 110 L526 110" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="480" y="102" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d3557">pause()</text>
+  <path d="M530 146 L439 146" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="485" y="172" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d3557">resume()</text>
+
+  <path d="M605 159 C605 235 115 235 115 163" fill="none" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="360" y="228" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d3557">stop()</text>
+
+  <text x="360" y="62" text-anchor="middle" font-size="12" fill="#e63946">play() on a playing or paused sound starts it again from the beginning.</text>
+  <text x="360" y="78" text-anchor="middle" font-size="12" fill="#e63946">"complete" fires when it reaches the end (never, while it loops).</text>
+</svg>

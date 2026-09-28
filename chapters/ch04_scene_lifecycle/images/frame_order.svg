@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="330" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="380" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">One frame, for one running scene</text>
+
+  <rect x="15" y="60" width="130" height="110" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="80" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">PRE_UPDATE</text>
+  <text x="80" y="106" text-anchor="middle" font-size="12" fill="#1b1f2a">event</text>
+  <text x="80" y="130" text-anchor="middle" font-size="11" fill="#1b1f2a">objects added last</text>
+  <text x="80" y="144" text-anchor="middle" font-size="11" fill="#1b1f2a">frame join the</text>
+  <text x="80" y="158" text-anchor="middle" font-size="11" fill="#1b1f2a">update list</text>
+
+  <rect x="170" y="60" width="190" height="110" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="265" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">UPDATE event</text>
+  <text x="265" y="110" text-anchor="middle" font-size="12" fill="#1b1f2a">preUpdate() on game objects</text>
+  <text x="265" y="126" text-anchor="middle" font-size="12" fill="#1b1f2a">timers, tweens, physics</text>
+  <text x="265" y="148" text-anchor="middle" font-size="11" fill="#457b9d">(then any UPDATE listeners</text>
+  <text x="265" y="162" text-anchor="middle" font-size="11" fill="#457b9d">you added yourself)</text>
+
+  <rect x="385" y="60" width="130" height="110" rx="10" fill="#f4a261" stroke="#1d3557" stroke-width="2"/>
+  <text x="450" y="95" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">update(</text>
+  <text x="450" y="113" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">time, delta)</text>
+  <text x="450" y="140" text-anchor="middle" font-size="12" fill="#1b1f2a">your scene's rules</text>
+
+  <rect x="540" y="60" width="95" height="110" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="587" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">POST_</text>
+  <text x="587" y="118" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">UPDATE</text>
+  <text x="587" y="140" text-anchor="middle" font-size="12" fill="#1b1f2a">event</text>
+
+  <rect x="660" y="60" width="85" height="110" rx="10" fill="#1d3557" stroke="#1d3557" stroke-width="2"/>
+  <text x="702" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#ffffff">render</text>
+  <text x="702" y="122" text-anchor="middle" font-size="11" fill="#f1faee">draw, then</text>
+  <text x="702" y="137" text-anchor="middle" font-size="11" fill="#f1faee">RENDER</text>
+  <text x="702" y="151" text-anchor="middle" font-size="11" fill="#f1faee">event</text>
+
+  <path d="M145 115 L166 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M360 115 L381 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M515 115 L536 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M635 115 L656 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+
+  <text x="380" y="210" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">With several scenes running</text>
+  <text x="380" y="236" text-anchor="middle" font-size="13" fill="#1b1f2a">every scene is UPDATED first - the last scene in the list first, the first scene last -</text>
+  <text x="380" y="256" text-anchor="middle" font-size="13" fill="#1b1f2a">then every scene is DRAWN - the first scene in the list first, so later scenes are drawn on top.</text>
+  <text x="380" y="290" text-anchor="middle" font-size="13" fill="#e63946">A paused scene is skipped in the update pass but still drawn. A sleeping scene is skipped in both.</text>
+</svg>

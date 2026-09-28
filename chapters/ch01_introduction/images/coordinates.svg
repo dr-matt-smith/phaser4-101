@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="440" viewBox="0 0 760 440" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="440" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker></defs>
+  <rect x="80" y="60" width="400" height="300" fill="#f1faee" stroke="#1d3557" stroke-width="3"/>
+  <text x="280" y="40" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b1f2a">The game: 800 x 600 (shown half size)</text>
+  <path d="M80 60 L200 60" stroke="#e63946" stroke-width="3" marker-end="url(#a)"/>
+  <text x="206" y="66" font-size="15" font-weight="bold" fill="#e63946">x</text>
+  <path d="M80 60 L80 170" stroke="#e63946" stroke-width="3" marker-end="url(#a)"/>
+  <text x="68" y="190" font-size="15" font-weight="bold" fill="#e63946">y</text>
+  <text x="74" y="54" text-anchor="end" font-size="13" fill="#1b1f2a">(0, 0)</text>
+  <text x="486" y="54" font-size="13" fill="#1b1f2a">(800, 0)</text>
+  <text x="74" y="378" text-anchor="end" font-size="13" fill="#1b1f2a">(0, 600)</text>
+  <text x="486" y="378" font-size="13" fill="#1b1f2a">(800, 600)</text>
+  <circle cx="280" cy="210" r="4" fill="#1d3557"/>
+  <text x="290" y="205" font-size="13" fill="#1b1f2a">(400, 300) - the middle</text>
+  <!-- origin examples -->
+  <rect x="600" y="80" width="80" height="50" fill="#a8dadc" stroke="#457b9d" stroke-width="2"/>
+  <circle cx="640" cy="105" r="5" fill="#e63946"/>
+  <text x="640" y="150" text-anchor="middle" font-size="12" fill="#1b1f2a">setOrigin(0.5)</text>
+  <text x="640" y="165" text-anchor="middle" font-size="12" fill="#1b1f2a">images: the default</text>
+  <rect x="600" y="190" width="80" height="50" fill="#a8dadc" stroke="#457b9d" stroke-width="2"/>
+  <circle cx="600" cy="190" r="5" fill="#e63946"/>
+  <text x="640" y="260" text-anchor="middle" font-size="12" fill="#1b1f2a">setOrigin(0, 0)</text>
+  <text x="640" y="275" text-anchor="middle" font-size="12" fill="#1b1f2a">text: the default</text>
+  <rect x="600" y="300" width="80" height="50" fill="#a8dadc" stroke="#457b9d" stroke-width="2"/>
+  <circle cx="680" cy="350" r="5" fill="#e63946"/>
+  <text x="640" y="370" text-anchor="middle" font-size="12" fill="#1b1f2a">setOrigin(1, 1)</text>
+  <text x="640" y="410" text-anchor="middle" font-size="12" fill="#1b1f2a">red dot = the point (x, y) refers to</text>
+</svg>

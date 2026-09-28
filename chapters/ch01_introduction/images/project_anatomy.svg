@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" font-family="Arial, Helvetica, sans-serif">
+  <rect width="720" height="360" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker></defs>
+  <text x="360" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">What is inside a Phaser game</text>
+  <rect x="30" y="60" width="200" height="110" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="130" y="86" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">main.ts</text>
+  <text x="130" y="110" text-anchor="middle" font-size="12" fill="#1b1f2a">const config = { width, height,</text>
+  <text x="130" y="126" text-anchor="middle" font-size="12" fill="#1b1f2a">scale, physics, scene: [...] }</text>
+  <text x="130" y="150" text-anchor="middle" font-size="12" fill="#1b1f2a">new Phaser.Game(config)</text>
+  <rect x="290" y="60" width="160" height="110" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="370" y="86" text-anchor="middle" font-size="15" font-weight="bold" fill="#1b1f2a">Phaser.Game</text>
+  <text x="370" y="110" text-anchor="middle" font-size="12" fill="#1b1f2a">the canvas, the loop,</text>
+  <text x="370" y="126" text-anchor="middle" font-size="12" fill="#1b1f2a">the loader's cache,</text>
+  <text x="370" y="142" text-anchor="middle" font-size="12" fill="#1b1f2a">the scene manager</text>
+  <rect x="510" y="50" width="180" height="60" rx="10" fill="#fff3e6" stroke="#f4a261" stroke-width="2"/>
+  <text x="600" y="76" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">TitleScene</text>
+  <text x="600" y="96" text-anchor="middle" font-size="12" fill="#1b1f2a">extends Phaser.Scene</text>
+  <rect x="510" y="125" width="180" height="60" rx="10" fill="#fff3e6" stroke="#f4a261" stroke-width="2"/>
+  <text x="600" y="151" text-anchor="middle" font-size="14" font-weight="bold" fill="#1b1f2a">GameScene</text>
+  <text x="600" y="171" text-anchor="middle" font-size="12" fill="#1b1f2a">extends Phaser.Scene</text>
+  <rect x="440" y="230" width="120" height="50" rx="10" fill="#f1faee" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="500" y="260" text-anchor="middle" font-size="13" fill="#1b1f2a">Player (Sprite)</text>
+  <rect x="580" y="230" width="120" height="50" rx="10" fill="#f1faee" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="640" y="260" text-anchor="middle" font-size="13" fill="#1b1f2a">Ball (Image)</text>
+  <rect x="510" y="295" width="120" height="45" rx="10" fill="#f1faee" stroke="#2a9d8f" stroke-width="2"/>
+  <text x="570" y="322" text-anchor="middle" font-size="13" fill="#1b1f2a">score (Text)</text>
+  <text x="130" y="230" text-anchor="middle" font-size="13" fill="#1b1f2a">one config ...</text>
+  <text x="370" y="230" text-anchor="middle" font-size="13" fill="#1b1f2a">... makes one game ...</text>
+  <text x="420" y="290" text-anchor="end" font-size="13" fill="#1b1f2a">... of scenes, full of game objects</text>
+  <path d="M230 115 L286 115" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M450 100 L506 82" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M450 130 L506 152" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M570 185 L505 226" stroke="#2a9d8f" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M610 185 L638 226" stroke="#2a9d8f" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M590 185 L572 291" stroke="#2a9d8f" stroke-width="2" marker-end="url(#a)"/>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "pickups": {
+    "path": "assets/",
+    "files": [
+      { "type": "image", "key": "heart", "url": "images/heart.png" },
+      { "type": "image", "key": "coin", "url": "images/coin.png" },
+      { "type": "image", "key": "star", "url": "images/star.png" },
+      {
+        "type": "spritesheet",
+        "key": "items",
+        "url": "spritesheets/items.png",
+        "frameConfig": { "frameWidth": 32, "frameHeight": 32 }
+      }
+    ]
+  }
+}

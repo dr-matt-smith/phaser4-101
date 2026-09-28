@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" font-family="Arial, Helvetica, sans-serif">
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#1b1f2a">Two forgiving timers: remember WHEN, not just WHETHER</text>
+
+  <!-- coyote time -->
+  <text x="40" y="68" font-size="17" font-weight="bold" fill="#1d3557">Coyote time - jump a moment AFTER running off a ledge</text>
+  <rect x="40" y="120" width="330" height="50" fill="#a8dadc"/>
+  <line x1="40" y1="120" x2="370" y2="120" stroke="#2a9d8f" stroke-width="4"/>
+  <path d="M 200 116 L 370 116 Q 430 120 470 200" fill="none" stroke="#1d3557" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <rect x="370" y="100" width="62" height="14" fill="#2a9d8f" opacity="0.3"/>
+  <text x="401" y="94" text-anchor="middle" font-size="13" fill="#2a9d8f">100 ms</text>
+  <circle cx="418" cy="128" r="6" fill="#e63946"/>
+  <text x="480" y="112" font-size="14" fill="#1b1f2a">jump pressed here: the hero is in the air,</text>
+  <text x="480" y="130" font-size="14" fill="#1b1f2a">but left the ground less than 100 ms ago -</text>
+  <text x="480" y="148" font-size="14" fill="#1b1f2a">so it still jumps</text>
+  <text x="40" y="200" font-size="14" font-family="Courier New, monospace" fill="#1d3557">time - lastOnFloor &lt;= COYOTE_TIME</text>
+
+  <!-- buffer -->
+  <text x="40" y="240" font-size="17" font-weight="bold" fill="#1d3557">Jump buffering - jump a moment BEFORE landing</text>
+  <rect x="40" y="320" width="720" height="30" fill="#a8dadc"/>
+  <line x1="40" y1="320" x2="760" y2="320" stroke="#2a9d8f" stroke-width="4"/>
+  <path d="M 120 262 Q 260 262 330 320" fill="none" stroke="#1d3557" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <path d="M 330 320 Q 400 250 470 280" fill="none" stroke="#1d3557" stroke-width="2.5"/>
+  <circle cx="299" cy="299" r="6" fill="#e63946"/>
+  <rect x="299" y="306" width="31" height="12" fill="#2a9d8f" opacity="0.3"/>
+  <text x="292" y="317" text-anchor="end" font-size="13" fill="#2a9d8f">&lt; 120 ms</text>
+  <text x="490" y="270" font-size="14" fill="#1b1f2a">jump pressed just before landing is remembered,</text>
+  <text x="490" y="288" font-size="14" fill="#1b1f2a">and happens the moment the feet touch down</text>
+  <text x="40" y="380" font-size="14" font-family="Courier New, monospace" fill="#1d3557">time - jumpPressedAt &lt;= JUMP_BUFFER</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="300" viewBox="0 0 760 300" font-family="Arial, Helvetica, sans-serif">
+  <rect width="760" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e63946"/></marker>
+  </defs>
+  <text x="380" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">Who talks to whom in Coin Collector</text>
+
+  <rect x="20" y="70" width="170" height="110" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="105" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">GameScene</text>
+  <text x="105" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">makes coins, hears clicks,</text>
+  <text x="105" y="138" text-anchor="middle" font-size="12" fill="#1b1f2a">plays sounds</text>
+  <text x="105" y="162" text-anchor="middle" font-size="12" font-style="italic" fill="#1b1f2a">does not keep the score</text>
+
+  <rect x="295" y="70" width="170" height="110" rx="10" fill="#f1faee" stroke="#457b9d" stroke-width="2"/>
+  <text x="380" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">ScoreManager</text>
+  <text x="380" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">score, lives, level,</text>
+  <text x="380" y="138" text-anchor="middle" font-size="12" fill="#1b1f2a">combo, multiplier</text>
+  <text x="380" y="162" text-anchor="middle" font-size="12" font-style="italic" fill="#1b1f2a">a plain class, not a scene</text>
+
+  <rect x="570" y="70" width="170" height="110" rx="10" fill="#a8dadc" stroke="#1d3557" stroke-width="2"/>
+  <text x="655" y="100" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">HudScene</text>
+  <text x="655" y="122" text-anchor="middle" font-size="12" fill="#1b1f2a">shows the numbers,</text>
+  <text x="655" y="138" text-anchor="middle" font-size="12" fill="#1b1f2a">drawn on top of the game</text>
+  <text x="655" y="162" text-anchor="middle" font-size="12" font-style="italic" fill="#1b1f2a">never changes the score</text>
+
+  <path d="M190 100 L291 100" stroke="#1d3557" stroke-width="2" marker-end="url(#a)"/>
+  <text x="242" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#1d3557">TELLS</text>
+  <text x="242" y="78" text-anchor="middle" font-size="11" fill="#1b1f2a">method calls</text>
+  <text x="242" y="93" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">collect(10)</text>
+  <text x="242" y="120" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">loseLife()</text>
+  <text x="242" y="134" text-anchor="middle" font-size="11" font-family="Courier New, monospace" fill="#1b1f2a">breakCombo()</text>
+
+  <path d="M465 100 L566 100" stroke="#e63946" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#o)"/>
+  <text x="517" y="62" text-anchor="middle" font-size="12" font-weight="bold" fill="#e63946">ANNOUNCES</text>
+  <text x="517" y="78" text-anchor="middle" font-size="11" fill="#1b1f2a">events</text>
+  <text x="517" y="120" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">SCORE_CHANGED</text>
+  <text x="517" y="133" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">LIVES_CHANGED</text>
+  <text x="517" y="146" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">COMBO_CHANGED</text>
+  <text x="517" y="159" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">LEVEL_CHANGED</text>
+
+  <path d="M380 180 L380 215 L105 215 L105 184" fill="none" stroke="#e63946" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#o)"/>
+  <text x="242" y="208" text-anchor="middle" font-size="10" font-family="Courier New, monospace" fill="#1b1f2a">LEVEL_CHANGED   GAME_OVER</text>
+
+  <text x="380" y="255" text-anchor="middle" font-size="13" fill="#1b1f2a">Solid arrow: "do this" - the caller knows exactly who it is talking to.</text>
+  <text x="380" y="277" text-anchor="middle" font-size="13" fill="#1b1f2a">Dashed arrow: "this happened" - the ScoreManager does not know who (if anyone) is listening.</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" font-family="Arial, Helvetica, sans-serif">
+<rect width="760" height="520" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1d3557"/></marker><marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f4a261"/></marker></defs>
+<text x="380" y="26" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">The game's states, and what moves it between them</text>
+<rect x="40" y="190" width="160" height="76" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2.5"/>
+<text x="120.0" y="217" text-anchor="middle" font-size="17" font-weight="bold" font-family="Courier New, monospace" fill="#1d3557">"idle"</text>
+<text x="120.0" y="236" text-anchor="middle" font-size="12" fill="#1b1f2a">no tiles showing</text>
+<rect x="300" y="60" width="160" height="76" rx="12" fill="#f1faee" stroke="#457b9d" stroke-width="2.5"/>
+<text x="380.0" y="87" text-anchor="middle" font-size="17" font-weight="bold" font-family="Courier New, monospace" fill="#1d3557">"oneUp"</text>
+<text x="380.0" y="106" text-anchor="middle" font-size="12" fill="#1b1f2a">one tile showing</text>
+<rect x="560" y="190" width="160" height="76" rx="12" fill="#fde2e4" stroke="#e63946" stroke-width="2.5"/>
+<text x="640.0" y="217" text-anchor="middle" font-size="17" font-weight="bold" font-family="Courier New, monospace" fill="#1d3557">"twoUp"</text>
+<text x="640.0" y="236" text-anchor="middle" font-size="12" fill="#1b1f2a">the second tile</text>
+<text x="640.0" y="251" text-anchor="middle" font-size="12" fill="#1b1f2a">is turning over</text>
+<rect x="300" y="320" width="160" height="76" rx="12" fill="#fde2e4" stroke="#e63946" stroke-width="2.5"/>
+<text x="380.0" y="347" text-anchor="middle" font-size="17" font-weight="bold" font-family="Courier New, monospace" fill="#1d3557">"checking"</text>
+<text x="380.0" y="366" text-anchor="middle" font-size="12" fill="#1b1f2a">looking at the pair</text>
+<rect x="40" y="52" width="160" height="70" rx="12" fill="#fde2e4" stroke="#f4a261" stroke-width="2.5" stroke-dasharray="7 4"/>
+<text x="120.0" y="79" text-anchor="middle" font-size="17" font-weight="bold" font-family="Courier New, monospace" fill="#1d3557">"peeking"</text>
+<text x="120.0" y="98" text-anchor="middle" font-size="12" fill="#1b1f2a">every tile face up</text>
+<rect x="300" y="436" width="160" height="70" rx="12" fill="#fde2e4" stroke="#f4a261" stroke-width="2.5" stroke-dasharray="7 4"/>
+<text x="380.0" y="463" text-anchor="middle" font-size="17" font-weight="bold" font-family="Courier New, monospace" fill="#1d3557">"shuffling"</text>
+<text x="380.0" y="482" text-anchor="middle" font-size="12" fill="#1b1f2a">loose tiles moving</text>
+<path d="M200 205 L296 110" stroke="#1d3557" stroke-width="2.2" fill="none" marker-end="url(#a)"/>
+<text x="250" y="172" text-anchor="start" font-size="12.5" fill="#e63946">click a tile:</text>
+<text x="250" y="187" text-anchor="start" font-size="12.5" fill="#e63946">flip it up</text>
+<path d="M460 100 C520 110 590 140 620 186" stroke="#1d3557" stroke-width="2.2" fill="none" marker-end="url(#a)"/>
+<text x="560" y="112" text-anchor="start" font-size="12.5" fill="#e63946">click another:</text>
+<text x="560" y="127" text-anchor="start" font-size="12.5" fill="#e63946">flip it up, moves + 1</text>
+<path d="M640 266 C630 320 540 355 464 358" stroke="#1d3557" stroke-width="2.2" fill="none" marker-end="url(#a)"/>
+<text x="596" y="300" text-anchor="end" font-size="12.5" fill="#e63946">its flip has finished</text>
+<text x="596" y="315" text-anchor="end" font-size="12.5" fill="#e63946">(the flip's callback)</text>
+<path d="M296 346 C240 330 190 300 150 270" stroke="#1d3557" stroke-width="2.2" fill="none" marker-end="url(#a)"/>
+<text x="168" y="366" text-anchor="start" font-size="12.5" fill="#e63946">a pair: keep it</text>
+<text x="168" y="381" text-anchor="start" font-size="12.5" fill="#e63946">a wrong pair: wait,</text>
+<text x="168" y="396" text-anchor="start" font-size="12.5" fill="#e63946">flip both back</text>
+<path d="M95 190 L95 126" stroke="#f4a261" stroke-width="2.2" fill="none" marker-end="url(#o)"/>
+<text x="84" y="164" text-anchor="end" font-size="12.5" fill="#c46a1c">P</text>
+<path d="M145 122 L145 186" stroke="#f4a261" stroke-width="2.2" fill="none" marker-end="url(#o)"/>
+<text x="154" y="164" text-anchor="start" font-size="12.5" fill="#c46a1c">all back</text>
+<path d="M380 396 L380 432" stroke="#f4a261" stroke-width="2.2" fill="none" marker-end="url(#o)"/>
+<text x="392" y="420" text-anchor="start" font-size="12.5" fill="#c46a1c">too many wrong pairs</text>
+<path d="M296 470 C80 470 50 400 70 270" stroke="#f4a261" stroke-width="2.2" fill="none" marker-end="url(#o)"/>
+<text x="140" y="462" text-anchor="middle" font-size="12.5" fill="#c46a1c">all moved</text>
+<rect x="520" y="420" width="18" height="14" rx="3" fill="#fde2e4" stroke="#e63946" stroke-width="2"/>
+<text x="546" y="432" font-size="12" fill="#1b1f2a">locked: clicks are ignored</text>
+<rect x="520" y="444" width="18" height="14" rx="3" fill="#f1faee" stroke="#f4a261" stroke-width="2" stroke-dasharray="4 2"/>
+<text x="546" y="456" font-size="12" fill="#1b1f2a">advanced version only</text>
+<text x="520" y="480" font-size="12" fill="#1b1f2a">the simple version has three states:</text>
+<text x="520" y="495" font-size="12" fill="#1b1f2a">idle, oneUp, and twoUp for a wrong pair</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="330" viewBox="0 0 780 330" font-family="Arial, Helvetica, sans-serif">
+  <rect width="780" height="330" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ffd166"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#a8dadc"/></marker></defs>
+  <text x="390" y="28" text-anchor="middle" font-size="18" font-weight="bold" fill="#1b1f2a">Three wave patterns</text>
+
+  <!-- row -->
+  <rect x="20" y="45" width="230" height="220" fill="#1d3557" rx="8"/>
+  <g fill="#e63946">
+    <path d="M45 95 l20 0 l-10 12 z"/><path d="M95 95 l20 0 l-10 12 z"/><path d="M145 95 l20 0 l-10 12 z"/><path d="M195 95 l20 0 l-10 12 z"/>
+  </g>
+  <g stroke="#a8dadc" stroke-width="1.5" fill="none" stroke-dasharray="4 3">
+    <path d="M55 50 L55 90" marker-end="url(#b)"/><path d="M105 50 L105 90" marker-end="url(#b)"/><path d="M155 50 L155 90" marker-end="url(#b)"/><path d="M205 50 L205 90" marker-end="url(#b)"/>
+  </g>
+  <g stroke="#ffd166" stroke-width="2" fill="none"><path d="M55 115 L55 200" marker-end="url(#a)"/><path d="M205 115 L205 200" marker-end="url(#a)"/></g>
+  <text x="135" y="160" text-anchor="middle" font-size="12" fill="#f1faee">then creep down</text>
+  <path d="M125 245 l12 -18 l12 18 z" fill="#a8dadc"/>
+  <text x="135" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">row</text>
+  <text x="135" y="310" text-anchor="middle" font-size="12" fill="#1b1f2a">tweens, each with a longer delay</text>
+
+  <!-- stream -->
+  <rect x="275" y="45" width="230" height="220" fill="#1d3557" rx="8"/>
+  <g fill="#e63946">
+    <path d="M405 70 l20 0 l-10 12 z"/><path d="M405 120 l20 0 l-10 12 z"/><path d="M405 170 l20 0 l-10 12 z"/>
+  </g>
+  <g stroke="#ffd166" stroke-width="2" fill="none"><path d="M415 185 L415 215" marker-end="url(#a)"/></g>
+  <path d="M403 245 l12 -18 l12 18 z" fill="#a8dadc"/>
+  <text x="355" y="120" text-anchor="middle" font-size="12" fill="#f1faee">one every</text>
+  <text x="355" y="136" text-anchor="middle" font-size="12" fill="#f1faee">550 ms, above</text>
+  <text x="355" y="152" text-anchor="middle" font-size="12" fill="#f1faee">the player</text>
+  <text x="390" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">stream</text>
+  <text x="390" y="310" text-anchor="middle" font-size="12" fill="#1b1f2a">a timer with repeat: size - 1</text>
+
+  <!-- swoop -->
+  <rect x="530" y="45" width="230" height="220" fill="#1d3557" rx="8"/>
+  <path d="M532 75 C 580 90, 590 200, 640 200 S 700 95, 745 75" stroke="#ffd166" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <g fill="#e63946">
+    <path d="M560 95 l20 0 l-10 12 z"/><path d="M590 165 l20 0 l-10 12 z"/><path d="M630 192 l20 0 l-10 12 z"/>
+  </g>
+  <path d="M633 245 l12 -18 l12 18 z" fill="#a8dadc"/>
+  <text x="645" y="290" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d3557">swoop (advanced)</text>
+  <text x="645" y="310" text-anchor="middle" font-size="12" fill="#1b1f2a">a Spline path; a tween moves 0 to 1 along it</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" font-family="Arial, Helvetica, sans-serif">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="360" y="28" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b1f2a">Why rectangles are unfair to round things</text>
+
+  <!-- left: bounding boxes overlap -->
+  <rect x="60" y="60" width="140" height="140" fill="none" stroke="#f4a261" stroke-width="2"/>
+  <circle cx="130" cy="130" r="70" fill="#457b9d" fill-opacity="0.85"/>
+  <rect x="180" y="180" width="100" height="100" fill="none" stroke="#f4a261" stroke-width="2"/>
+  <circle cx="230" cy="230" r="50" fill="#457b9d" fill-opacity="0.85"/>
+  <rect x="180" y="180" width="20" height="20" fill="#e63946"/>
+  <text x="300" y="120" font-size="14" fill="#1b1f2a">The boxes overlap (red),</text>
+  <text x="300" y="140" font-size="14" fill="#1b1f2a">so a box test says "hit" -</text>
+  <text x="300" y="160" font-size="14" fill="#1b1f2a">but the balls are nowhere</text>
+  <text x="300" y="180" font-size="14" fill="#1b1f2a">near each other.</text>
+
+  <!-- right: the empty corners -->
+  <rect x="520" y="70" width="150" height="150" fill="#e63946" fill-opacity="0.25" stroke="#f4a261" stroke-width="2"/>
+  <circle cx="595" cy="145" r="75" fill="#457b9d"/>
+  <text x="595" y="250" text-anchor="middle" font-size="14" fill="#1b1f2a">about a fifth of a circle's box</text>
+  <text x="595" y="270" text-anchor="middle" font-size="14" fill="#1b1f2a">is empty corner (the red)</text>
+</svg>
